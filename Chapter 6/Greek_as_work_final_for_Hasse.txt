@@ -1,0 +1,95 @@
+		Freq	"Align(H*, R)"	RH-Contour	*NoHL-Fall-s	Head/Stem-Faith	Max-H	Max-L*	*H]wm-max	IDENT-T	DEP-T	NoSpread	NoCrowd	NoContour	FtBin	IDENT(Assoc)	NoAssoc	"s, <-- T"	s' <-- T	s' <--> T*	s' <-- T*	WSP	All-Ft-R	All-Ft-R*2	VV <-- Main	Concatenate	Rightmost	Ident-Assoc x 2
+		Freq	"Align(H*, R)"	RH-Contour	*NoHL-Fall-s	Head/Stem-Faith	Max-H	Max-L*	*H]wm-max	IDENT-T	DEP-T	NoSpread	NoCrowd	NoContour	FtBin	IDENT(Assoc)	NoAssoc	"s, <-- T"	s' <-- T	s' <-- T*	s' <-- T*	WSP	All-Ft-R	All-Ft-R*2	VV <-- Main	Concatenate	Rightmost	Ident-Assoc x 2
+"kE:H*r, HL]min"	('kE:H*)r	1					1	1									1											
+	('kE:HL)r						1							1		1	1											
+"keH*r, HL]max"	('kE:H*)r						1	1	1								1											
+	('kE:HL*)r						1							1		1	1											
+	(kE:L*)r	1					1	1		1							1											
+	(kE:HL*)r						1	1		1				1			1											
+	(kE:)r						2	1								1		1	1	1								
+"mu-s, HL]max"	(mu:HL*)s	1												1			1											
+	('mu:L*)s									1							1											
+	('mu:)s						1	1										1	1	1								
+"mu-s, HL"	(mu:HL*)s	1												1			1											
+	('mu:)s						1	1										1	1	1								
+	(muH)s						1	1			1						1											
+	(muH)s							1									1	1	1	1								
+kE:ruk-s	"('kE:HL*).(,ruk)s"													1			1	1					1				1	
+	"(,kE:H).('rukL*)s"																2						1		1			
+	('kE:H*L).ruks													1			1					1	1					
+	kE:H.('rukL*)s																2					1						
+	"('kE:H).(,rukL*)s"													1			1			1	1		1				1	
+	"('kE:HL*).(,rukL*)s"	1										1		1			2						1				1	
+anTrO:pos	anH.(TrO:L*)pos	1															2						1					
+	an.(TrO:HL*)pos													1			1						1					
+	an.TrO:H.('poL*)s														1		2					1			1			
+polupi:dak-s	"po.lu.(pi:HL*).(,daL*k)s"	1										1		1			2						1				1	
+	"po.lu.('pi:H).(,dakL*)s"																2			1	1		1				1	
+	po.lu.(pi:H).('dakL*)s																2						1		1			
+	"po.luH.(pi:L*).(,dak)s"																2	1					1				1	
+	"po.luH.(pi:L*).(,dakL*)s"											1					2						1			1	1	
+	po.lu.('pi:HL*).daks													1			1					1	1					
+asp-iH*d-oH*s	as.('piH*do)s	1					2	1								1	3					1						
+	as.pi.('doH*)s					1	2	1								1	1					1						
+	aH*s.('piL*.do)s					1	2								1	2	1					1						
+	('asH).piL*.do_s_						2									2	2			1	1		2	1				
+sig-E:H*-roH*-s	si.gE:.('roH*)s	1					2	1							1	1	1					1						
+	si.('gE:H*).ros		1			1	2	1								1	1						1					
+	"si.('gE:).(,roH*)s"						2	1							1	1	1	1	1	1	1		1				1	
+	"si.(,gE:).('roH*)s"						2	1							1	1	1	1					1		1			
+	"si.(,gEH:).('roH*)s"						2	1				1			1	1	1						1		1			
+egraph-s-e	eH.('grapL*).se	1															2						1					
+	e.grapH.seL*																2					1						
+philos	('phiL*.los)						1										1											
+	('phiH.loL*s)																2			1	1							
+	('phi.lo)s						1	1									0	1	1	1	1							
+	phiH.l('loL*)s	1													1		2											
+	('phiH.los)				1			1									1				1							
+	('phiH.loL)s							1			1						2				1							
+/basil-euH*-ia/	ba.siH.('leiL*).a	1					1									1	1						1					
+	ba.si.('leiH*L).a		1				1	1		1				1			1						1					
+	ba.siL*.(leiH*).a		1				1										2			1	1		1					
+/basil-euH*-ia-is/	"ba.si.(,leiH).('aiL*)s"	1					1									1	2						1					
+	"ba.si.(,leiH*).('ai)s"		1				1	1									1	1	1	1	1		1					
+	"ba.si.('leiH*).(,ai)s"		1		1		1	1									1	1					1				1	
+poH*d-iH*	po.('diH*)	1					2	1							1	1	1											
+	(poH*.di)		1		1		2	1								1	1											
+	('po.diH*)						2	1								1	1	1	1	1	1							
+	('poH*.diL)		1				2	1			1					2	2											
+	('poH*L.di)						2	1					1	1		1	1											
+mu-oHs	('mu.oH*)s						1	1									1	1	1	1	1							
+	('muH.oL*)s						1									1	2			1	1							
+	mu.('oH*)s	1					1	1							1		1											
+	muH.('L*o)s						1								1	1	2											
+	('muH.oL)s						1	1			1					1	2				1							
+riH*n-iH*	ri:.('niH*)	1					2	1							1	1	1					1						
+	('ri:H*).ni		1		1		2	1								1	1						1					
+	('ri:H*.ni)		1	1	1		2	1								1	1											
+	('ri:).niH*						2	1								1	1	1	1	1	1		1					
+	('ri:H*L).ni		1				2	1		1				1		1	1						1					
+	"('ri:).(,niH*)"						2	1							1	1	1	1	1	1	1		1					
+	('ri:HL*).ni						2	1						1		2	1						1					1
+pompoluki	pom.poH.('luL*.ki)	1					1									1	2											
+	pom.po.lu.('kiH*)						1	1							1		1											
+murmE:k-iH*	murH.('mE:L*).ki	1					1									1	2						1					
+	"mur.(,mE:).('kiH*)"						1	1							1		1	1					1	1				
+	mur.mE:.('kiH*)						1	1							1		1					1						
+	mur.('mE:).kiH*						1	1									1	1	1	1	1		1					
+svvtE:H*r-	svv.('tE:H*)ra]min		1		1		1	1	1								1						1					
+	svv.(tE:H*L)ra]min	1	1				1	1		1				1			1						1					
+	svv.(tE:H*)raL]min		1				1	1		1		1					1						1					
+	svv.(tE:H*)raL]min		1				1	1			1						1						1					
+	svv.(tE:L*)ra]min		1		1		1	1		1							1						1					
+	svvH.('tE:L*).ra]min					1										1	2						1					
+thugaH*ter-a	thu.ga('theH*.ra)		1		1		1	1									1											
+	thu.gaH.('theL*.ra)					1	1									1	2											
+	thu.ga('theH*.raL)	1	1				1	1			1						1											
+	thu.ga.('theH*L.ra)						1	1		1			1	1			1											
+sO:tE:H*r-O:n	sO:.tE:H.('rO:L*)n					1	1									1	2					2						
+	sO:('.tE:H*L).rO:Ln		1				1	1		1				1			1					2	1					
+	"sO:('tE:H*).(,rO:L)n"	1	1				1	1			1						2					1	1				1	
+	"sO:(,tE:H).('rO:L*)n"					1	1									1	2						1					
+xeu/xu-ma	('xuH.maL)							1			1						2				1							
+	('xeuHL*).ma													1			1						1					
+	('xeuHL*.ma)			1										1			1											
+	xuH.('maL*)	1													1		2											

@@ -1,0 +1,25 @@
+		Freq	NonFin-syll	FtBin	wd=F	AllFt-L	AllFt-R	Iamb	Trochee	NonFin-Ft	Align-L(w-ft)	Align-R(wd-ft)	NonInit-F	Parse-Syll
+		Freq	NonFin-syll	FtBin	wd=F	AllFt-L	AllFt-R	Iamb	Trochee	NonFin-Ft	Align-L(w-ft)	Align-R(wd-ft)	NonInit-F	Parse-Syll
+/L/	L1 \-> (L1)	1	1	1						1			1	
+	L \-> L				1						1	1		1
+/L L/	L1 L \-> (L1 L)							1		1			1	
+	L1 L \-> (L1) L	1		1			1					1	1	1
+	L L1 \-> (L L1)		1						1	1			1	
+	L L1 \-> L (L1)		1	1		1				1	1			1
+/L L L/	L1 L L \-> (L1) L L			1			2					1	1	2
+	L1 L L \-> (L1 L) L						1	1				1	1	1
+	L L1 L \-> L (L1) L			1		1	1				1	1		2
+	L L1 L \-> (L L1) L	1					1		1			1	1	1
+	L L1 L \-> L (L1 L)					1		1		1	1			1
+	L L L1 \-> L L (L1)		1	1		2				1	1			2
+	L L L1 \-> L (L L1)		1			1			1	1	1			1
+/L L L L/	L L1 L L \-> L (L1) L L			1		1	2				1	1		3
+	L L1 L L \-> (L L1) L L	1					2		1			1	1	2
+	L L1 L L \-> L (L1 L) L					1	1	1			1	1		2
+	L1 L L L \-> (L1) L L L			1			3					1	1	3
+	L1 L L L \-> (L1 L) L L						2	1				1	1	2
+	L L L1 L \-> L L (L1) L			1		2	1				1	1		3
+	L L L1 L \-> L (L L1) L					1	1		1		1	1		2
+	L L L1 L \-> L L (L1 L)					2		1		1	1			2
+	L L L L1 \-> L L L (L1)		1	1		2				1	1			3
+	L L L L1 \-> L L (L L1)		1			2			1		1			2

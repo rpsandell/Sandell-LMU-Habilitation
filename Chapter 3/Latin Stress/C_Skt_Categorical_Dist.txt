@@ -1,0 +1,123 @@
+"ooTextFile"
+"Distributions"
+1 column with numeric data
+"Vedic"
+118 rows
+"[L1 V]" 10
+"[L V:1]" 10
+"[L1 VC]" 10
+"[L V:1C]" 10
+"[H1 V]" 10
+"[H1 V:]" 10
+"[H1 VC]" 10
+"[H1 V:C]" 10
+"[L1 L V]" 10
+"[L1 L V:]" 10
+"[L1 L VC]" 10
+"[L1 L V:C]" 10
+"[L H1 V]" 10
+"[L H1 V:]" 10
+"[L H1 VC]" 10
+"[L H1 V:C]" 10
+"[H1 L V]" 10
+"[H1 L V:]" 10
+"[H1 L VC]" 10
+"[H1 L V:C]" 10
+"[H H1 V]" 10
+"[H H1 V:]" 10
+"[H H1 VC]" 10
+"[H H1 VC]" 10
+"[H H H1 V:]" 10
+"[H H H1 V:C]" 10
+"[H H H1 VC]" 10
+"[H H H1 V]" 10
+"[H H1 L V:]" 10
+"[H H1 L V:C]" 10
+"[H H1 L VC]" 10
+"[H H1 L V]" 10
+"[H L H1 V:]" 10
+"[H L H1 V:C]" 10
+"[H L H1 V]" 10
+"[H L H1 VC]" 10
+"[H1 L L V:]" 10
+"[H1 L L V:C]" 10
+"[H1 L L VC]" 10
+"[H1 L L V]" 10
+"[L H H1 V:]" 10
+"[L H H1 V:C]" 10
+"[L H H1 V]" 10
+"[L H H1 VC]" 10
+"[L H1 L V:]" 10
+"[L H1 L V:C]" 10
+"[L H1 L V]" 10
+"[L H1 L VC]" 10
+"[L L H1 V:]" 10
+"[L L H1 V:C]" 10
+"[L L H1 V]" 10
+"[L L H1 VC]" 10
+"[L1 L L V:]" 10
+"[L1 L L V:C]" 10
+"[L1 L L VC]" 10
+"[L1 L L V]" 10
+"[H H H H1 V:]" 10
+"[H H H H1 VC]" 10
+"[H H H H1 V]" 10
+"[H H H H1 V:C]" 10
+"[H H H1 L V:]" 10
+"[H H H1 L V:C]" 10
+"[H H H1 L VC]" 10
+"[H H L H1 V:]" 10
+"[H H L H1 VC]" 10
+"[H H L H1 V]" 10
+"[H H1 L L VC]" 10
+"[H H1 L L V]" 10
+"[H H H1 L V]" 10
+"[H H1 L L V:]" 10
+"[H H1 L L V:C]" 10
+"[H L H H1 V:C]" 10
+"[H L H H1 VC]" 10
+"[H L H H1 V]" 10
+"[H L H1 L V:]" 10
+"[H L H1 L V:]" 10
+"[H L H1 L VC]" 10
+"[H L H1 L V]" 10
+"[H L L H1 V:]" 10
+"[H L L H1 VC]" 10
+"[H L L H1 V]" 10
+"[H L L H1 V:C]" 10
+"[H L L1 L VC]" 10
+"[H L L1 L V:]" 10
+"[H L H H1 V:]" 10
+"[H L L1 L V:C]" 10
+"[L H H H1 V]" 10
+"[L H H H1 VC]" 10
+"[L H H1 L V:]" 10
+"[L H H1 L VC]" 10
+"[L H H H1 V:]" 10
+"[L H H H1 V:C]" 10
+"[L H L H1 V:]" 10
+"[L H L H1 V:C]" 10
+"[L H L H1 V]" 10
+"[L H L H1 VC]" 10
+"[L H1 L L V:]" 10
+"[L H1 L L VC]" 10
+"[L H1 L L V]" 10
+"[L H1 L L V:C]" 10
+"[L H1 H L V:C]" 10
+"[L L H H1 V:]" 10
+"[L L H H1 V]" 10
+"[L L H H1 VC]" 10
+"[L L H1 L V:]" 10
+"[L L H1 L V:C]" 10
+"[L L H1 L VC]" 10
+"[L L H1 L V]" 10
+"[L L L H1 V:C]" 10
+"[L L L H1 V]" 10
+"[L L L H1 VC]" 10
+"[L L L1 L V:C]" 10
+"[L L L1 L V]" 10
+"[L L L1 L VC]" 10
+"[L L H H1 V:C]" 10
+"[L L L H1 V:]" 10
+"[L L L1 L V:]" 10
+"[H H L H1 V:C]" 10

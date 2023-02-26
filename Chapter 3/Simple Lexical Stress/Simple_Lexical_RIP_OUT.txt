@@ -1,0 +1,45 @@
+
+Input: /'L L/	Max-Prom	Iamb	Trochee	FtBin	Parse-Syll	All-Ft-L	All-Ft-R	NonFinality-Ft	NonFinality-Syll	NonInitiality-Ft
+('L L)	504.0	0.0	1.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	
+(L 'L)	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	1.0	
+('L) L	504.0	0.0	0.0	0.0	1.0	1.0	0.0	1.0	0.0	0.0	1.0	
+L ('L)	0.0	1.0	0.0	0.0	1.0	1.0	1.0	0.0	1.0	1.0	0.0	
+
+Input: /L 'L/	Max-Prom	Iamb	Trochee	FtBin	Parse-Syll	All-Ft-L	All-Ft-R	NonFinality-Ft	NonFinality-Syll	NonInitiality-Ft
+L ('L)	246.0	0.0	0.0	0.0	1.0	1.0	1.0	0.0	1.0	1.0	0.0	
+(L 'L)	246.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	1.0	
+('L L)	0.0	1.0	1.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	
+('L) L	0.0	1.0	0.0	0.0	1.0	1.0	0.0	1.0	0.0	0.0	1.0	
+feature Max-Prom had user-specified MU = 0.0 and SIGMA2 = 0.6.
+feature Iamb had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature Trochee had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature FtBin had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature Parse-Syll had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature All-Ft-L had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature All-Ft-R had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature NonFinality-Ft had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature NonFinality-Syll had user-specified MU = -10.0 and SIGMA2 = 0.6.
+feature NonInitiality-Ft had user-specified MU = -10.0 and SIGMA2 = 0.6.
+all other features retained default MU and SIGMA2.
+
+
+|weights| after optimization:
+Max-Prom (mu=0.0, sigma^2=0.6)	4.875332834143478
+Iamb (mu=-10.0, sigma^2=0.6)	13.891014904773638
+Trochee (mu=-10.0, sigma^2=0.6)	8.959104751939623
+FtBin (mu=-10.0, sigma^2=0.6)	7.149880706102207
+Parse-Syll (mu=-10.0, sigma^2=0.6)	7.149880706102207
+All-Ft-L (mu=-10.0, sigma^2=0.6)	7.340917489216645
+All-Ft-R (mu=-10.0, sigma^2=0.6)	9.80896333782406
+NonFinality-Ft (mu=-10.0, sigma^2=0.6)	10.191036904052913
+NonFinality-Syll (mu=-10.0, sigma^2=0.6)	6.300022120217783
+NonInitiality-Ft (mu=-10.0, sigma^2=0.6)	12.65908275266034
+Input:	Candidate:	Observed:	Predicted:
+/'L L/	('L L)	504.0	0.5056831903108009
+/'L L/	(L 'L)	0.0	9.826183991768478E-4
+/'L L/	('L) L	504.0	0.49237342666894385
+/'L L/	L ('L)	0.0	9.607646210784567E-4
+/L 'L/	L ('L)	246.0	0.4800161353862016
+/L 'L/	(L 'L)	246.0	0.4909346953292209
+/L 'L/	('L L)	0.0	0.014718279854860999
+/L 'L/	('L) L	0.0	0.014330889429716545

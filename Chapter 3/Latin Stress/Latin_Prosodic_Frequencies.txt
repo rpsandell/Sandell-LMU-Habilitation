@@ -1,0 +1,146 @@
+"ooTextFile"
+"Distributions"
+1 column with numeric data
+"Latin"
+X rows
+"H" 13181
+"H1 H" 11220
+"L1 H" 7688
+"H H1 H" 5810
+"H1 L H" 5653
+"L H1 H" 3262
+"L1 L H" 2717
+"H1 L" 2488
+"H L H1 H" 2159
+"H L1 L H" 1735
+"H H H1 H" 1707
+"H H1 L H" 1521
+"L H1 L H" 1082
+"L L H1 H" 1054
+"L H H1 H" 971
+"L1 L" 799
+"L1 L L H" 799
+"H H1 L" 735
+"L H1 L" 512
+"H L L H1 H" 459
+"H1 L L" 439
+"H H L H1 H" 403
+"H L H1 L" 365
+"H L H1 L H" 360
+"H L H H1 H" 353
+"L1 L L" 346
+"H H H1 L" 309
+"L H L H1 H" 286
+"L L H1 L H" 239
+"L L L H1 H" 237
+"L L H1 L" 236
+"H H H1 L H" 228
+"H H L L" 215
+"H H H H H" 209
+"L L H H H" 208
+"L H H L H" 153
+"L H H L" 143
+"L L L L" 133
+"H H L H L" 128
+"H L L L" 111
+"L L L L H" 109
+"H L H L L" 100
+"H H L L H" 95
+"L L L H L" 92
+"L H H H H" 85
+"L H L L H" 82
+"H L L H L" 79
+"H H H L H H" 77
+"L L L H L H" 72
+"H H L H L H" 62
+"H L L H L H" 56
+"H L H H L" 51
+"L H H L H H" 49
+"H L H L H H" 48
+"L H L H L" 46
+"H L L L H" 44
+"H L H H L H" 43
+"H L L H H H" 42
+"H H H L H L" 41
+"L H L H H H" 37
+"H L H L H L" 32
+"L L H H L H" 30
+"H H L H H H" 28
+"L L L H H H" 28
+"H H H H L" 27
+"H L H H L L" 27
+"H H L L H H" 25
+"L H H L H L" 23
+"L H L H L H" 23
+"L L H L H H" 23
+"L H L L" 21
+"H H H L L" 17
+"H L H H H H" 17
+"L H H L L" 15
+"H H H H L H" 14
+"H H L L L" 14
+"L L H H H H" 13
+"L L H H L" 13
+"L H H H L" 12
+"H H L L L H" 11
+"H L L H L H H" 11
+"L L H L H L" 11
+"H L L L H H" 10
+"L H L H L H L" 9
+"L H H H H H" 8
+"L L H L L H H" 8
+"H H L L L L" 7
+"L L H H L H H" 7
+"H H H H H H" 6
+"H H L H L H H" 6
+"H L H L H L H" 6
+"H L L L H L" 5
+"L H L H L H H" 5
+"L L H L L H" 5
+"L L L L L H" 5
+"H H H L H L H" 4
+"H H L L H H H" 4
+"H L L H L H L" 4
+"H L L H L H L H" 4
+"H L L H L H L H H" 4
+"H L L H L L" 4
+"L H L L H L H" 4
+"H H H H L H H" 3
+"H H L H L H L" 3
+"H L H H L H H" 3
+"L H H H L H" 3
+"L H L H H L" 3
+"L H L H H L H" 3
+"L H L H L L" 3
+"L H L L L" 3
+"L L H H H L" 3
+"L L L L H H" 3
+"H H H L H H H" 2
+"H H L H H L" 2
+"H L H L H H H" 2
+"L H H L L H" 2
+"L H L L H H" 2
+"L H L L H L" 2
+"L L L H L L" 2
+"L L L L H L H" 2
+"H H H H L H L" 1
+"H H H L H L H H" 1
+"H H L H L L" 1
+"H H L L H L" 1
+"H L H H H L" 1
+"H L H H L H H H" 1
+"H L H H L H L" 1
+"H L H L H L H H" 1
+"H L L L H L H" 1
+"H L L L L" 1
+"L" 1
+"L H L H L L H" 1
+"L H L L L L H" 1
+"L L H H H H H" 1
+"L L H H L H L" 1
+"L L H H L L" 1
+"L L H L H L H H" 1
+"L L H L L" 1
+"L L L H L H H" 1
+"L L L H L H L" 1
+"L L L L L L" 1

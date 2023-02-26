@@ -1,0 +1,64 @@
+"ooTextFile"
+"Distributions"
+1 column with numeric data
+"Latin"
+59 rows
+"[H1 H]" 11220
+"[L1 H]" 7688
+"[H H1 H]" 5810
+"[H1 L H]" 5653
+"[L H1 H]" 3262
+"[L1 L H]" 2717
+"[H1 L]" 2488
+"[H L H1 H]" 2159
+"[H L1 L H]" 1735
+"[H H H1 H]" 1707
+"[H H1 L H]" 1521
+"[L H1 L H]" 1082
+"[L L H1 H]" 1054
+"[L H H1 H]" 971
+"[L1 L]" 799
+"[L L1 L H]" 799
+"[H H1 L]" 735
+"[L H1 L]" 512
+"[H L L H1 H]" 459
+"[H1 L L]" 439
+"[H H L H1 H]" 403
+"[H L H1 L]" 365
+"[H L H1 L H]" 360
+"[H L H H1 H]" 353
+"[L1 L L]" 346
+"[H H H1 L]" 309
+"[L H L H1 H]" 286
+"[L L H1 L H]" 239
+"[L L L H1 H]" 237
+"[L L H1 L]" 236
+"[H H H1 L H]" 228
+"[H H1 L L]" 215
+"[H H H H1 H]" 209
+"[L L H H1 H]" 208
+"[L H H1 L H]" 153
+"[L H H1 L]" 143
+"[L L1 L L]" 133
+"[H H L H1 L]" 128
+"[H L1 L L]" 111
+"[L L L1 L H]" 109
+"[H L H1 L L]" 100
+"[H H L1 L H]" 95
+"[L L L H1 L]" 92
+"[L H H H1 H]" 85
+"[L H L1 L H]" 82
+"[H L L H1 L]" 79
+"[H L H H1 L]" 51
+"[L H L H1 L]" 46
+"[H L L1 L H]" 44
+"[H H H H1 L]" 27
+"[L H1 L L]" 21
+"[H H H1 L L]" 17
+"[L H H1 L L]" 15
+"[H H L1 L L]" 14
+"[L L H H1 L]" 13
+"[L H H H1 L]" 12
+"[L H L1 L L]" 3
+"[H L L1 L L]" 1
+"[L L H1 L L]" 1

@@ -1,0 +1,10 @@
+Max-Prom	0	0.6
+Iamb	-10	0.6
+Trochee	-10	0.6
+FtBin	-10	0.6
+Parse-Syll	-10	0.6
+All-Ft-L	-10	0.6
+All-Ft-R	-10	0.6
+NonFinality-Ft	-10	0.6
+NonFinality-Syll	-10	0.6
+NonInitiality-Ft	-10	0.6

@@ -1,0 +1,12 @@
+Overt_Form	Frequency
+L1	1
+L	0
+L1 L	1
+L L1	0
+L1 L L	0
+L L1 L	1
+L L L1	0
+L1 L L L	0
+L L1 L L	1
+L L L1 L	0
+L L L L1	0

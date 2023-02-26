@@ -1,0 +1,86 @@
+		Freq	MainRight	WSP	Anchor-L-Ft	Anchor-R-Ft	HeadStress-Ft-L	All-Ft-L	All-Ft-R	Trochee	Parse-Syll	FtBin	Head-Faith-Ft-L	HeadFaith-Ft-R	CULM	*VV	ABLAUT	NonFinality-syll	NonFinality-Ft	Max-V	Anchor-L-Ft-gen-pl
+		Freq	MainRight	WSP	Anchor-L-Ft	Anchor-R-Ft	HeadStress-Ft-L	All-Ft-L	All-Ft-R	Trochee	Parse-Syll	FtBin	Head-Faith-Ft-L	HeadFaith-Ft-R	CULM	*VV	ABLAUT	NonFinality-syll	NonFinality-Ft	Max-V	Anchor-L-Ft-gen-pl
+/ma-(ti-m/	ma.('tim)	1						1			1							1	1		
+	('ma.tim)		1	1	1		1						1						1		
+	(ma.'tim)				1		1			1			1					1	1		
+/man-as)/	('ma.nas)	1	1	1			1												1		
+	ma.('nas)							1			1							1	1		
+	(ma.'nas)						1			1								1	1		
+	('ma).nas		1	1		1	1		1		1			1							
+/pad-(i/	pa.('di)	1						1			1	1						1	1		
+	('pa.di)		1		1														1		
+	('pa).di		1		1				1		1	1									
+/(gav)-(e:/	('ga.ve:)		1	1	1	1													1		
+	('ga).ve:	1	1	1	1				1		1	1									
+	(ga.'ve:)				1	1				1								1	1		
+	ga.('ve:)				1	1		1			1							1	1		
+/ma-(ti-(bhis/	ma.('ti.bhis)	1	1	1	1			1			1								1		
+	ma.ti.('bhis)			2	1		1	2			2		1					1	1		
+	('ma.ti).bhis		2	1	2		1		1		1		1								
+/arc-(i-(mant-am	ar.ci.('man.tam)	1	1	2	1			2			2								1		
+	ar.('ci.man).tam		2	3	1		1	1	1		2		1								
+/pumams-am/	('pu.ma:m).sam	1	3	2					1		1										
+	pu.('mam.sam)		1	1				1			1								1		
+/puma:ms-(as/	pum.('sas)	1		1				1			1							1	1	1	
+	('pum).sas		1	1	1				1		1									1	
+	('pum.sas)		1	1	1														1	1	
+	pu.ma:m.('sas)			1				2			2							1	1		
+/(gav)-(mant-(as	('go:.ma).tas		2	1	2	1	1		1		1		1								
+	('go:).ma.tas	1	2	1	2		1		2		2		1								
+	go:.('ma.tas)		1	2	2	1		1			1								1		
+	go:.ma.('tas)			1	2	1	1	2			2		1					1	1		
+/(taks)-(ta)-m/	taks.('tam)	1		1	1	1		1			1							1	1		
+	('taks.tam)		1	1	1	1	1						1						1		
+/bandh-u)-ta:)/	ban.('dhu.ta:)	1	1	2		1	1	1			1								1		
+	('ban.dhu).ta:		2	1		1	1		1		1			1							
+	ban.dhu.('ta:)			1		1		2			2							1	1		
+/udani-(mant-(bhis/	('u.da).ni.mad.bhis		4	2	2		1		3		3		1								
+	u.da.ni.('mad).bhis		1	1	1			3	1		4										
+	u.da.ni.('mad.bhis)	1	1	1	1			3			3								1		
+	(-u.da).ni.('mad.bhis)		1	1	1			3	3		1								1		
+	('u.da).ni.(-mad.bhis)		4	2	1			3	3		1								1		
+/ar(i-as/	a.('ri.as)		1	2				1			1					1			1		
+	ar.('yas)	1		1				1			1							1	1		
+	('ar.yas)		1	1	1														1		
+/(sanu-(su/	('snu.Su)	1	1		1														1	1	
+	snu.('Su)				1			1			1	1						1	1	1	
+	('sa.nu).su		2		1				1		1										
+	('snu).('su)		1									1			1				1	1	
+/uks-(an-(as/	uk.('Snas)	1		1				1			1							1	1	1	
+	uk.('Sa.nas)		1	2	1			1			1								1		
+	('uk.Snas)		1	1	2		1						1						1	1	
+	uk.Sa.('nas)			1	1		1	2			2		1					1	1		
+/sUrya)-de:v-(a)-tA)-(ya)-m/	('sUr.ya).de:.va.ti.yam		5	2	2	3	1		4				1	1							
+	sUr.ya.de:.('va).ti.yam		3	3	1	2	1	3	2			1	1	1							
+	sUr.ya.de:.va.('ti.yam)	1	1	3	1	3		4											1		
+	sUr.ya.de:.('va.ti).yam		2	3	1	3	1	3	1				1	1							
+/dev-(a)-(vant-am/	de:.('va).van.tam	1	2	3	1		1	1	2		3	1	1								
+	de:.va.(van.tam)		1	2	1	1		2			2								1		
+	('de:.va).van.tam		3	2	2		1		2		2		1								
+/man-as)-(vant-am/	('ma.nas).van.tam	1	3	3	1		1		2		2		1								
+	ma.nas.('van.tam)		1	2		1		2			2								1		
+/kav-(i)-(a)-ta:)/ (cf. ka.('vi).kra.tu)	kav.('ya.ta:)	1	1	2		2	1	1			1								1		
+	kav.('ya).ta:		1	2		2	1	1	1		2	1		1							
+	('kav.ya).ta:		2	1	2	2	1		1		1			1							
+	kav.ya.('ta:)			1	2	2		2			2							1	1		
+	ka.('vi.a).ta:		2	1	1	2	1	1	1		2			1		1					
+/jya-i)STha-ta:)ti-m/	jyeS.('Tha.ta:).tim	1	2	3		1	1	1	1		2										
+	('jyeS).Tha.ta:.tim		3	2		1	1		3		3			1							
+	jyeS.Tha.('ta:.tim)		1	2		2		2			2			1					1		
+	jyeS.Tha.('ta:).tim		1	2		1		2	1		3										
+/(nr-(bhis/	('nr.bhis)	1	1	1	1														1		
+	nr.('bhis)				1			1			1							1	1		
+/(nr-(nAm/	nr.('nAm)	1			1			1			1							1	1		
+	('nr.nAm)		1	1	2														1		1
+/nad-(I)-(nAm/	na.('dI).nAm	1	1	1	2			1			2										1
+	na.di.('nAm)			1	1	1	1	2			2		1	1				1	1		
+	('na.dI).nAm		2	2	2		1		1		1		1								1
+/(go)-(mat-(I-(nAm/	('go:).ma.tI.nAm	1	3	2	4		1		3		3		1								1
+	go:.('ma.tI).nAm		2	3	4	1		1	1		2										1
+	go:.ma.tI.('nAm)			2	3	1	1	3			3		1					1	1		
+/ma-(ti-(nAm/	ma.tI.('nAm)	1		1	1		1	2			2		1					1	1		
+	ma.('tI.nAm)		1	1	2			1			1								1		1
+/(rsi)-manas)/	('r.si).ma.nas	1	3	1		1			2		2										
+	r.si.('ma.nas)		1	1	1	1		2			2								1		
+/sakti-(bhis/	('sak.ti).bhis	1	2	1	1						1										
+	sak.ti.('bhis)			1				2			2							1	1		

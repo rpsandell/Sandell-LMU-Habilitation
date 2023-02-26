@@ -1,0 +1,515 @@
+V1	V2	initial	peninitial	final	penult	antepenult	DTS_L	DTS_R	DTO_L	DTO_R	DTS_R_FSM	DTO_R_FSM	C_Lat_Rule	C_Skt_Rule
+/L V/	L1 V	1	0	0	1	1	1	0	0	1	1	1	1	1
+/L V/	L V1	0	1	1	0	0	0	1	1	0	0	0	0	0
+/L V:/	L1 V:	1	0	0	1	1	0	0	0	0	1	1	1	0
+/L V:/	L V:1	0	1	1	0	0	1	1	1	1	0	0	0	1
+/L VC/	L1 VC	1	0	0	1	1	0	0	0	0	1	1	1	1
+/L VC/	L V1C	0	1	1	0	0	1	1	1	1	0	0	0	0
+/L V:C/	L1 V:C	1	0	0	1	1	0	0	0	0	1	1	1	0
+/L V:C/	L V:1C	0	1	1	0	0	1	1	1	1	0	0	0	1
+/H V/	H1 V	1	0	0	1	1	1	1	1	1	1	1	1	1
+/H V/	H V1	0	1	1	0	0	0	0	0	0	0	0	0	0
+/H V:/	H1 V:	1	0	0	1	1	1	0	1	0	1	1	1	1
+/H V:/	H V:1	0	1	1	0	0	0	1	0	1	0	0	0	0
+/H VC/	H1 VC	1	0	0	1	1	1	0	1	0	1	1	1	1
+/H VC/	H V1C	0	1	1	0	0	0	1	0	1	0	0	0	0
+/H V:C/	H1 V:C	1	0	0	1	1	1	0	1	0	1	1	1	1
+/H V:C/	H V:1C	0	1	1	0	0	0	1	0	1	0	0	0	0
+/L L V/	L1 L V	1	0	0	0	1	1	0	0	1	0	1	1	1
+/L L V/	L L1 V	0	1	0	1	0	0	0	0	0	1	0	0	0
+/L L V/	L L V1	0	0	1	0	0	0	1	1	0	0	0	0	0
+/L L V:/	L1 L V:	1	0	0	0	1	0	0	0	0	0	1	1	1
+/L L V:/	L L1 V:	0	1	0	1	0	0	0	0	0	1	0	0	0
+/L L V:/	L L V:1	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L L VC/	L1 L VC	1	0	0	0	1	0	0	0	0	0	1	1	1
+/L L VC/	L L1 VC	0	1	0	1	0	0	0	0	0	1	0	0	0
+/L L VC/	L L V1C	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L L V:C/	L1 L V:C	1	0	0	0	1	0	0	0	0	0	1	1	1
+/L L V:C/	L L1 V:C	0	1	0	1	0	0	0	0	0	1	0	0	0
+/L L V:C/	L L V:1C	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L H V/	L1 H V	1	0	0	0	1	0	0	0	0	0	0	0	0
+/L H V/	L H1 V	0	1	0	1	0	1	1	1	1	1	1	1	1
+/L H V/	L H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/L H V:/	L1 H V:	1	0	0	0	1	0	0	0	0	0	0	0	0
+/L H V:/	L H1 V:	0	1	0	1	0	1	0	1	0	1	1	1	1
+/L H V:/	L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H VC/	L1 H VC	1	0	0	0	1	0	0	0	0	0	0	0	0
+/L H VC/	L H1 VC	0	1	0	1	0	1	0	1	0	1	1	1	1
+/L H VC/	L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H V:C/	L1 H V:C	1	0	0	0	1	0	0	0	0	0	0	0	0
+/L H V:C/	L H1 V:C	0	1	0	1	0	1	0	1	0	1	1	1	1
+/L H V:C/	L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L V/	H1 L V	1	0	0	0	1	1	1	1	1	1	1	1	1
+/H L V/	H L1 V	0	1	0	1	0	0	0	0	0	0	0	0	0
+/H L V/	H L V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H L V:/	H1 L V:	1	0	0	0	1	1	0	1	0	1	1	1	1
+/H L V:/	H L1 V:	0	1	0	1	0	0	0	0	0	0	0	0	0
+/H L V:/	H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L VC/	H1 L VC	1	0	0	0	1	1	0	1	0	1	1	1	1
+/H L VC/	H L1 VC	0	1	0	1	0	0	0	0	0	0	0	0	0
+/H L VC/	H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L V:C/	H1 L V:C	1	0	0	0	1	1	0	1	0	1	1	1	1
+/H L V:C/	H L1 V:C	0	1	0	1	0	0	0	0	0	0	0	0	0
+/H L V:C/	H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H V/	H1 H V	1	0	0	0	1	1	0	1	0	0	0	0	0
+/H H V/	H H1 V	0	1	0	1	0	0	1	0	1	1	1	1	1
+/H H V/	H H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H H V:/	H1 H V:	1	0	0	0	1	1	0	1	0	0	0	0	0
+/H H V:/	H H1 V:	0	1	0	1	0	0	0	0	0	1	1	1	1
+/H H V:/	H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H VC/	H1 H VC	1	0	0	0	1	1	0	1	0	0	0	0	0
+/H H VC/	H H1 VC	0	1	0	1	0	0	0	0	0	1	1	1	1
+/H H VC/	H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H V:C/	H1 H V:C	1	0	0	0	1	1	0	1	0	0	0	0	0
+/H H V:C/	H H1 V:C	0	1	0	1	0	0	0	0	0	1	1	1	1
+/H H V:C/	H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H V:/	H1 H H V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H V:/	H H1 H V:	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H H H V:/	H H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H H V:/	H H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H V:C/	H1 H H V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H V:C/	H H1 H V:C	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H H H V:C/	H H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H H V:C/	H H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H VC/	H1 H H VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H VC/	H H1 H VC	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H H H VC/	H H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H H VC/	H H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H V/	H1 H H V	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H V/	H H1 H V	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H H H V/	H H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	1
+/H H H V/	H H H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H H L V:/	H1 H L V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L V:/	H H1 L V:	0	1	0	0	1	0	0	0	0	1	1	1	1
+/H H L V:/	H H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H L V:/	H H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L V:C/	H1 H L V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L V:C/	H H1 L V:C	0	1	0	0	1	0	0	0	0	1	1	1	1
+/H H L V:C/	H H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H L V:C/	H H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L VC/	H1 H L VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L VC/	H H1 L VC	0	1	0	0	1	0	0	0	0	1	1	1	1
+/H H L VC/	H H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H L VC/	H H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L V/	H1 H L V	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L V/	H H1 L V	0	1	0	0	1	0	1	0	1	1	1	1	1
+/H H L V/	H H L1 V	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H L V/	H H L V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H L H V:/	H1 L H V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H L H V:/	H L1 H V:	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H L H V:/	H L H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H L H V:/	H L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L H V:C/	H1 L H V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H L H V:C/	H L1 H V:C	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H L H V:C/	H L H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H L H V:C/	H L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L H V/	H1 L H V	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H L H V/	H L1 H V	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H L H V/	H L H1 V	0	0	0	1	0	0	1	0	1	1	1	1	1
+/H L H V/	H L H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H L H VC/	H1 L H VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H L H VC/	H L1 H VC	0	1	0	0	1	0	0	0	0	0	0	0	0
+/H L H VC/	H L H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H L H VC/	H L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L L V:/	H1 L L V:	1	0	0	0	0	1	0	1	0	1	1	0	1
+/H L L V:/	H L1 L V:	0	1	0	0	1	0	0	0	0	0	0	1	0
+/H L L V:/	H L L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H L L V:/	H L L V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L L V:C/	H1 L L V:C	1	0	0	0	0	1	0	1	0	1	1	0	1
+/H L L V:C/	H L1 L V:C	0	1	0	0	1	0	0	0	0	0	0	1	0
+/H L L V:C/	H L L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H L L V:C/	H L L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L L VC/	H1 L L VC	1	0	0	0	0	1	0	1	0	1	1	0	1
+/H L L VC/	H L1 L VC	0	1	0	0	1	0	0	0	0	0	0	1	0
+/H L L VC/	H L L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H L L VC/	H L L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H L L V/	H1 L L V	1	0	0	0	0	1	1	1	1	1	1	0	1
+/H L L V/	H L1 L V	0	1	0	0	1	0	0	0	0	0	0	1	0
+/H L L V/	H L L1 V	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H L L V/	H L L V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/L H H V:/	L1 H H V:	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H H V:/	L H1 H V:	0	1	0	0	1	1	0	1	0	0	0	0	0
+/L H H V:/	L H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	1
+/L H H V:/	L H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H H V:C/	L1 H H V:C	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H H V:C/	L H1 H V:C	0	1	0	0	1	1	0	1	0	0	0	0	0
+/L H H V:C/	L H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	1
+/L H H V:C/	L H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H H V/	L1 H H V	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H H V/	L H1 H V	0	1	0	0	1	1	0	1	0	0	0	0	0
+/L H H V/	L H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	1
+/L H H V/	L H H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/L H H VC/	L1 H H VC	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H H VC/	L H1 H VC	0	1	0	0	1	1	0	1	0	0	0	0	0
+/L H H VC/	L H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	0
+/L H H VC/	L H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	1
+/L H L V:/	L1 H L V:	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H L V:/	L H1 L V:	0	1	0	0	1	1	0	1	0	1	1	1	1
+/L H L V:/	L H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	0
+/L H L V:/	L H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H L V:C/	L1 H L V:C	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H L V:C/	L H1 L V:C	0	1	0	0	1	1	0	1	0	1	1	1	1
+/L H L V:C/	L H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	0
+/L H L V:C/	L H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L H L V/	L1 H L V	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H L V/	L H1 L V	0	1	0	0	1	1	1	1	1	1	1	1	1
+/L H L V/	L H L1 V	0	0	0	1	0	0	0	0	0	0	0	0	0
+/L H L V/	L H L V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/L H L VC/	L1 H L VC	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L H L VC/	L H1 L VC	0	1	0	0	1	1	0	1	0	1	1	1	1
+/L H L VC/	L H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	0
+/L H L VC/	L H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L L H V:/	L1 L H V:	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L L H V:/	L L1 H V:	0	1	0	0	1	0	0	0	0	0	0	0	0
+/L L H V:/	L L H1 V:	0	0	0	1	0	1	0	1	0	1	1	1	1
+/L L H V:/	L L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L L H V:C/	L1 L H V:C	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L L H V:C/	L L1 H V:C	0	1	0	0	1	0	0	0	0	0	0	0	0
+/L L H V:C/	L L H1 V:C	0	0	0	1	0	1	0	1	0	1	1	1	1
+/L L H V:C/	L L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L L H V/	L1 L H V	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L L H V/	L L1 H V	0	1	0	0	1	0	0	0	0	0	0	0	0
+/L L H V/	L L H1 V	0	0	0	1	0	1	1	1	1	1	1	1	1
+/L L H V/	L L H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/L L H VC/	L1 L H VC	1	0	0	0	0	0	0	0	0	0	0	0	0
+/L L H VC/	L L1 H VC	0	1	0	0	1	0	0	0	0	0	0	0	0
+/L L H VC/	L L H1 VC	0	0	0	1	0	1	0	1	0	1	1	1	1
+/L L H VC/	L L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/L L L V:/	L1 L L V:	1	0	0	0	0	0	0	0	0	0	1	0	1
+/L L L V:/	L L1 L V:	0	1	0	0	1	0	0	0	0	0	0	1	0
+/L L L V:/	L L L1 V:	0	0	0	1	0	0	0	0	0	1	0	0	0
+/L L L V:/	L L L V:1	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L L L V:C/	L1 L L V:C	1	0	0	0	0	0	0	0	0	0	1	0	1
+/L L L V:C/	L L1 L V:C	0	1	0	0	1	0	0	0	0	0	0	1	0
+/L L L V:C/	L L L1 V:C	0	0	0	1	0	0	0	0	0	1	0	0	0
+/L L L V:C/	L L L V:1C	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L L L VC/	L1 L L VC	1	0	0	0	0	0	0	0	0	0	1	0	1
+/L L L VC/	L L1 L VC	0	1	0	0	1	0	0	0	0	0	0	1	0
+/L L L VC/	L L L1 VC	0	0	0	1	0	0	0	0	0	1	0	0	0
+/L L L VC/	L L L V1C	0	0	1	0	0	1	1	1	1	0	0	0	0
+/L L L V/	L1 L L V	1	0	0	0	0	1	0	0	1	0	1	0	1
+/L L L V/	L L1 L V	0	1	0	0	1	0	0	0	0	0	0	1	0
+/L L L V/	L L L1 V	0	0	0	1	0	0	0	0	0	1	0	0	0
+/L L L V/	L L L V1	0	0	1	0	0	0	1	1	0	0	0	0	0
+/H H H H V:/	H1 H H H V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H H V:/	H H1 H H V:	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H H V:/	H H H1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H H H V:/	H H H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H H H V:/	H H H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H H VC/	H1 H H H VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H H VC/	H H1 H H VC	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H H VC/	H H H1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H H H VC/	H H H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H H H VC/	H H H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H H V/	H1 H H H V	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H H V/	H H1 H H V	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H H V/	H H H1 H V	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H H H V/	H H H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	1
+/H H H H V/	H H H H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H H H H V:C/	H1 H H H V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H H V:C/	H H1 H H V:C	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H H V:C/	H H H1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H H H V:C/	H H H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	0
+/H H H H V:C/	H H H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	1
+/H H H L V:/	H1 H H L V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H L V:/	H H1 H L V:	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H L V:/	H H H1 L V:	0	0	0	0	1	0	0	0	0	1	1	1	1
+/H H H L V:/	H H H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H H L V:/	H H H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H L V:C/	H1 H H L V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H L V:C/	H H1 H L V:C	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H L V:C/	H H H1 L V:C	0	0	0	0	1	0	0	0	0	1	1	1	1
+/H H H L V:C/	H H H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H H L V:C/	H H H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H H L VC/	H1 H H L VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H H L VC/	H H1 H L VC	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H H L VC/	H H H1 L VC	0	0	0	0	1	0	0	0	0	1	1	1	1
+/H H H L VC/	H H H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H H L VC/	H H H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L H V:/	H1 H L H V:	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L H V:/	H H1 L H V:	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H L H V:/	H H L1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H L H V:/	H H L H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H L H V:/	H H L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L H V:/	H1 H L H V:C	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L H VC/	H1 H L H VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L H VC/	H H1 L H VC	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H L H VC/	H H L1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H L H VC/	H H L H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	1
+/H H L H VC/	H H L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L H V/	H1 H L H V	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L H V/	H H1 L H V	0	1	0	0	0	0	0	0	0	0	0	0	0
+/H H L H V/	H H L1 H V	0	0	0	0	1	0	0	0	0	0	0	0	0
+/H H L H V/	H H L H1 V	0	0	0	1	0	0	1	0	1	1	1	1	1
+/H H L H V/	H H L H V1	0	0	1	0	0	0	0	0	0	0	0	0	0
+/H H L L VC/	H1 H L L VC	1	0	0	0	0	1	0	1	0	0	0	0	0
+/H H L L VC/	H H1 L L VC	0	1	0	0	0	0	0	0	0	1	1	0	1
+/H H L L VC/	H H L1 L VC	0	0	0	0	1	0	0	0	0	0	0	1	0
+/H H L L VC/	H H L L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	0
+/H H L L VC/	H H L L V1C	0	0	1	0	0	0	1	0	1	0	0	0	0
+/H H L L V/	H1 H L L V	1	0	0	0	0	1	0	1	0	0	0	0	
+/H H L L V/	H H1 L L V	0	1	0	0	0	0	1	0	1	1	1	0	
+/H H L L V/	H H L1 L V	0	0	0	0	1	0	0	0	0	0	0	1	
+/H H L L V/	H H L L1 V	0	0	0	1	0	0	0	0	0	0	0	0	
+/H H L L V/	H H L L V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/H H L L V/	H H L1 L V	0	0	0	0	1	0	0	0	0	0	0	1	
+/H H L L V/	H H L1 L V	0	0	0	0	1	0	0	0	0	0	0	1	
+/H H H L V/	H1 H H L V	1	0	0	0	0	1	0	1	0	0	0	0	
+/H H H L V/	H H1 H L V	0	1	0	0	0	0	0	0	0	0	0	0	
+/H H H L V/	H H H1 L V	0	0	0	0	1	0	1	0	1	1	1	1	
+/H H H L V/	H H H L1 V	0	0	0	1	0	0	0	0	0	0	0	0	
+/H H H L V/	H H H L V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/H H L L V:/	H1 H L L V:	1	0	0	0	0	1	0	1	0	0	0	0	
+/H H L L V:/	H H1 L L V:	0	1	0	0	0	0	0	0	0	1	1	0	
+/H H L L V:/	H H L1 L V:	0	0	0	0	1	0	0	0	0	0	0	1	
+/H H L L V:/	H H L L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/H H L L V:/	H H L L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/H H L L V:C/	H1 H L L V:C	1	0	0	0	0	1	0	1	0	0	0	0	
+/H H L L V:C/	H H1 L L V:C	0	1	0	0	0	0	0	0	0	1	1	0	
+/H H L L V:C/	H H L1 L V:C	0	0	0	0	1	0	0	0	0	0	0	1	
+/H H L L V:C/	H H L L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/H H L L V:C/	H H L L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H H L L V:C/	H H L1 L V:C	0	0	0	0	1	0	0	0	0	0	0	1	
+/H L H H V:C/	H1 L H H V:C	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H H V:C/	H L1 H H V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H H V:C/	H L H1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L H H V:C/	H L H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L H H V:C/	H L H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H H VC/	H1 L H H VC	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H H VC/	H L1 H H VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H H VC/	H L H1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L H H VC/	H L H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L H H VC/	H L H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H H V/	H1 L H H V	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H H V/	H L1 H H V	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H H V/	H L H1 H V	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L H H V/	H L H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	
+/H L H H V/	H L H H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/H L H L V:/	H1 L H L V:	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H L V:/	H L1 H L V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H L V:/	H L H1 L V:	0	0	0	0	1	0	0	0	0	1	1	1	
+/H L H L V:/	H L H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L H L V:/	H L H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H L V:C/	H1 L H L V:C	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H L V:C/	H L1 H L V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H L V:C/	H L H1 L V:C	0	0	0	0	1	0	0	0	0	1	1	1	
+/H L H L V:C/	H L H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L H L V:C/	H L H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H L VC/	H1 L H L VC	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H L VC/	H L1 H L VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H L VC/	H L H1 L VC	0	0	0	0	1	0	0	0	0	1	1	1	
+/H L H L VC/	H L H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L H L VC/	H L H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H L V/	H1 L H L V	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H L V/	H L1 H L V	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H L V/	H L H1 L V	0	0	0	0	1	0	1	0	1	1	1	1	
+/H L H L V/	H L H L1 V	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L H L V/	H L H L V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/H L L H V:/	H1 L L H V:	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L L H V:/	H L1 L H V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L H V:/	H L L1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L L H V:/	H L L H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L L H V:/	H L L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L L H VC/	H1 L L H VC	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L L H VC/	H L1 L H VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L H VC/	H L L1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L L H VC/	H L L H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L L H VC/	H L L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L L H V/	H1 L L H V	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L L H V/	H L1 L H V	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L H V/	H L L1 H V	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L L H V/	H L L H1 V	0	0	0	1	0	0	1	0	1	1	1	1	
+/H L L H V/	H L L H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/H L L H V:C/	H1 L L H V:C	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L L H V:C/	H L1 L H V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L H V:C/	H L L1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L L H V:C/	H L L H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L L H V:C/	H L L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L L L VC/	H1 L L L VC	1	0	0	0	0	1	0	1	0	1	1	0	
+/H L L L VC/	H L1 L L VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L L VC/	H L L1 L VC	0	0	0	0	1	0	0	0	0	0	0	1	
+/H L L L VC/	H L L L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L L L VC/	H L L L V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L L L V:/	H1 L L L V:	1	0	0	0	0	1	0	1	0	1	1	0	
+/H L L L V:/	H L1 L L V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L L V:/	H L L1 L V:	0	0	0	0	1	0	0	0	0	0	0	1	
+/H L L L V:/	H L L L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L L L V:/	H L L L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L H H V:/	H1 L H H V:	1	0	0	0	0	1	0	1	0	0	0	0	
+/H L H H V:/	H L1 H H V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L H H V:/	H L H1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	
+/H L H H V:/	H L H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/H L H H V:/	H L H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/H L L L V:C/	H1 L L L V:C	1	0	0	0	0	1	0	1	0	1	1	0	
+/H L L L V:C/	H L1 L L V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/H L L L V:C/	H L L1 L V:C	0	0	0	0	1	0	0	0	0	0	0	1	
+/H L L L V:C/	H L L L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/H L L L V:C/	H L L L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H H V/	L1 H H H V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H H V/	L H1 H H V	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H H V/	L H H1 H V	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H H H V/	L H H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	
+/L H H H V/	L H H H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L H H H VC/	L1 H H H VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H H VC/	L H1 H H VC	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H H VC/	L H H1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H H H VC/	L H H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H H H VC/	L H H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H L V:/	L1 H H L V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H L V:/	L H1 H L V:	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H L V:/	L H H1 L V:	0	0	0	0	1	0	0	0	0	1	1	1	
+/L H H L V:/	L H H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H H L V:/	L H H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H L VC/	L1 H H L VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H L VC/	L H1 H L VC	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H L VC/	L H H1 L VC	0	0	0	0	1	0	0	0	0	1	1	1	
+/L H H L VC/	L H H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H H L VC/	L H H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H H V:/	L1 H H H V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H H V:/	L H1 H H V:	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H H V:/	L H H1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H H H V:/	L H H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H H H V:/	L H H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H H V:/	L H H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H H H V:C/	L1 H H H V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H H V:C/	L H1 H H V:C	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H H V:C/	L H H1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H H H V:C/	L H H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H H H V:C/	L H H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H H V:C/	L H H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H L H V:/	L1 H L H V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L H V:/	L H1 L H V:	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H V:/	L H L1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H L H V:/	L H L H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H L H V:/	L H L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H L H V:/	L H1 L H V:	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H V:C/	L1 H L H V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L H V:C/	L H1 L H V:C	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H V:C/	L H L1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H L H V:C/	L H L H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H L H V:C/	L H L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H L H V:C/	L H1 L H V:C	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H V/	L1 H L H V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L H V/	L H1 L H V	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H V/	L H L1 H V	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H L H V/	L H L H1 V	0	0	0	1	0	0	1	0	1	1	1	1	
+/L H L H V/	L H L H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L H L H V/	L H1 L H V	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H VC/	L1 H L H VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L H VC/	L H1 L H VC	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L H VC/	L H L1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	
+/L H L H VC/	L H L H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	
+/L H L H VC/	L H L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H L H VC/	L H1 L H VC	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H L L V:/	L1 H L L V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L L V:/	L H1 L L V:	0	1	0	0	0	1	0	1	0	1	1	0	
+/L H L L V:/	L H L1 L V:	0	0	0	0	1	0	0	0	0	0	0	1	
+/L H L L V:/	L H L L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H L L V:/	L H L L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H L L VC/	L1 H L L VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L L VC/	L H1 L L VC	0	1	0	0	0	1	0	1	0	1	1	0	
+/L H L L VC/	L H L1 L VC	0	0	0	0	1	0	0	0	0	0	0	1	
+/L H L L VC/	L H L L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H L L VC/	L H L L V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H L L V/	L1 H L L V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L L V/	L H1 L L V	0	1	0	0	0	1	1	1	1	1	1	0	
+/L H L L V/	L H L1 L V	0	0	0	0	1	0	0	0	0	0	0	1	
+/L H L L V/	L H L L1 V	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H L L V/	L H L L V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L H L L V:C/	L1 H L L V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H L L V:C/	L H1 L L V:C	0	1	0	0	0	1	0	1	0	1	1	0	
+/L H L L V:C/	L H L1 L V:C	0	0	0	0	1	0	0	0	0	0	0	1	
+/L H L L V:C/	L H L L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H L L V:C/	L H L L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H L V:C/	L1 H H L V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L H H L V:C/	L H1 H L V:C	0	1	0	0	0	1	0	1	0	0	0	0	
+/L H H L V:C/	L H H1 L V:C	0	0	0	0	1	0	0	0	0	1	1	1	
+/L H H L V:C/	L H H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/L H H L V:C/	L H H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L H H L V:C/	L H H1 L V:C	0	0	0	0	1	0	0	0	0	1	1	1	
+/L L H H V:/	L1 L H H V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H H V:/	L L1 H H V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H H V:/	L L H1 H V:	0	0	0	0	1	1	0	1	0	0	0	0	
+/L L H H V:/	L L H H1 V:	0	0	0	1	0	0	0	0	0	1	1	1	
+/L L H H V:/	L L H H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L H H V:/	L L1 H H V	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H H V/	L1 L H H V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H H V/	L L1 H H V	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H H V/	L L H1 H V	0	0	0	0	1	1	0	1	0	0	0	0	
+/L L H H V/	L L H H1 V	0	0	0	1	0	0	1	0	1	1	1	1	
+/L L H H V/	L L H H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L L H H VC/	L1 L H H VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H H VC/	L L1 H H VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H H VC/	L L H1 H VC	0	0	0	0	1	1	0	1	0	0	0	0	
+/L L H H VC/	L L H H1 VC	0	0	0	1	0	0	0	0	0	1	1	1	
+/L L H H VC/	L L H H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L H L V:/	L1 L H L V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H L V:/	L L1 H L V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H L V:/	L L H1 L V:	0	0	0	0	1	1	0	1	0	1	1	1	
+/L L H L V:/	L L H L1 V:	0	0	0	1	0	0	0	0	0	0	0	0	
+/L L H L V:/	L L H L V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L H L V:C/	L1 L H L V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H L V:C/	L L1 H L V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H L V:C/	L L H1 L V:C	0	0	0	0	1	1	0	1	0	1	1	1	
+/L L H L V:C/	L L H L1 V:C	0	0	0	1	0	0	0	0	0	0	0	0	
+/L L H L V:C/	L L H L V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L H L VC/	L1 L H L VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H L VC/	L L1 H L VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H L VC/	L L H1 L VC	0	0	0	0	1	1	0	1	0	1	1	1	
+/L L H L VC/	L L H L1 VC	0	0	0	1	0	0	0	0	0	0	0	0	
+/L L H L VC/	L L H L V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L H L V/	L1 L H L V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H L V/	L L1 H L V	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H L V/	L L H1 L V	0	0	0	0	1	1	1	1	1	1	1	1	
+/L L H L V/	L L H L1 V	0	0	0	1	0	0	0	0	0	0	0	0	
+/L L H L V/	L L H L V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L L L H V:C/	L1 L L H V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L L H V:C/	L L1 L H V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L H V:C/	L L L1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/L L L H V:C/	L L L H1 V:C	0	0	0	1	0	1	0	1	0	1	1	1	
+/L L L H V:C/	L L L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L L H V/	L1 L L H V	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L L H V/	L L1 L H V	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L H V/	L L L1 H V	0	0	0	0	1	0	0	0	0	0	0	0	
+/L L L H V/	L L L H1 V	0	0	0	1	0	1	1	1	1	1	1	1	
+/L L L H V/	L L L H V1	0	0	1	0	0	0	0	0	0	0	0	0	
+/L L L H VC/	L1 L L H VC	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L L H VC/	L L1 L H VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L H VC/	L L L1 H VC	0	0	0	0	1	0	0	0	0	0	0	0	
+/L L L H VC/	L L L H1 VC	0	0	0	1	0	1	0	1	0	1	1	1	
+/L L L H VC/	L L L H V1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L L L V:C/	L1 L L L V:C	1	0	0	0	0	0	0	0	0	0	1	0	
+/L L L L V:C/	L L1 L L V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L L V:C/	L L L1 L V:C	0	0	0	0	1	0	0	0	0	0	0	1	
+/L L L L V:C/	L L L L1 V:C	0	0	0	1	0	0	0	0	0	1	0	0	
+/L L L L V:C/	L L L L V:1C	0	0	1	0	0	1	1	1	1	0	0	0	
+/L L L L V/	L1 L L L V	1	0	0	0	0	1	0	0	1	0	1	0	
+/L L L L V/	L L1 L L V	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L L V/	L L L1 L V	0	0	0	0	1	0	0	0	0	0	0	1	
+/L L L L V/	L L L L1 V	0	0	0	1	0	0	0	0	0	1	0	0	
+/L L L L V/	L L L L V1	0	0	1	0	0	0	1	1	0	0	0	0	
+/L L L L VC/	L1 L L L VC	1	0	0	0	0	0	0	0	0	0	1	0	
+/L L L L VC/	L L1 L L VC	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L L VC/	L L L1 L VC	0	0	0	0	1	0	0	0	0	0	0	1	
+/L L L L VC/	L L L L1 VC	0	0	0	1	0	0	0	0	0	1	0	0	
+/L L L L VC/	L L L L V1C	0	0	1	0	0	1	1	1	1	0	0	0	
+/L L H H V:C/	L1 L H H V:C	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L H H V:C/	L L1 H H V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L H H V:C/	L L H1 H V:C	0	0	0	0	1	1	0	1	0	0	0	0	
+/L L H H V:C/	L L H H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/L L H H V:C/	L L H H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L L H V:/	L1 L L H V:	1	0	0	0	0	0	0	0	0	0	0	0	
+/L L L H V:/	L L1 L H V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L H V:/	L L L1 H V:	0	0	0	0	1	0	0	0	0	0	0	0	
+/L L L H V:/	L L L H1 V:	0	0	0	1	0	1	0	1	0	1	1	1	
+/L L L H V:/	L L L H V:1	0	0	1	0	0	0	1	0	1	0	0	0	
+/L L L L V:/	L1 L L L V:	1	0	0	0	0	0	0	0	0	0	1	0	
+/L L L L V:/	L L1 L L V:	0	1	0	0	0	0	0	0	0	0	0	0	
+/L L L L V:/	L L L1 L V:	0	0	0	0	1	0	0	0	0	0	0	1	
+/L L L L V:/	L L L L1 V:	0	0	0	1	0	0	0	0	0	1	0	0	
+/L L L L V:/	L L L L V:1	0	0	1	0	0	1	1	1	1	0	0	0	
+/H H L H V:C/	H1 H L H V:C	1	0	0	0	0	1	0	1	0	0	0	0	
+/H H L H V:C/	H H1 L H V:C	0	1	0	0	0	0	0	0	0	0	0	0	
+/H H L H V:C/	H H L1 H V:C	0	0	0	0	1	0	0	0	0	0	0	0	
+/H H L H V:C/	H H L H1 V:C	0	0	0	1	0	0	0	0	0	1	1	1	
+/H H L H V:C/	H H L H V:1C	0	0	1	0	0	0	1	0	1	0	0	0	

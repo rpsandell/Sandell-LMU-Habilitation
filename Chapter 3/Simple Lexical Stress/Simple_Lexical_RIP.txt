@@ -1,0 +1,10 @@
+		Freq	Max-Prom	Iamb	Trochee	FtBin	Parse-Syll	All-Ft-L	All-Ft-R	NonFinality-Ft	NonFinality-Syll	NonInitiality-Ft
+		Freq	Max-Prom	Iamb	Trochee	FtBin	Parse-Syll	All-Ft-L	All-Ft-R	NonFinality-Ft	NonFinality-Syll	NonInitiality-Ft
+/'L L/	('L L)	1000		1						1		1
+	(L 'L)		1		1					1	1	1
+	('L) L	1000				1	1		1			1
+	L ('L)		1			1	1	1		1	1	
+/L 'L/	L ('L)	400				1	1	1		1	1	1
+	(L 'L)	400			1					1	1	1
+	('L L)		1	1						1		1
+	('L) L		1			1	1		1			1

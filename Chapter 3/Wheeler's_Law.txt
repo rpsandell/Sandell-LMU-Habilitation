@@ -1,0 +1,26 @@
+		Freq	All-Ft-R*2	Ident-Prom	Parse-Syllable	FtBin	NonInitiality	NonFinality	NonFinality-Foot	WSP	Trochee	Iamb	All-Ft-L	All-Ft-R	Leftmost	Rightmost	Align-wd-L	Align-wd-R	Rh-Contour	CLASH
+		Freq	All-Ft-R*2	Ident-Prom	Parse-Syllable	FtBin	NonInitiality	NonFinality	NonFinality-Foot	WSP	Trochee	Iamb	All-Ft-L	All-Ft-R	Leftmost	Rightmost	Align-wd-L	Align-wd-R	Rh-Contour	CLASH
+/L L L 'L/	L (L L) ('L)	1			1	1		1	1				4	1	1		1			
+	(L L) ('L L)		1	1			1		1				2	2	1					
+	L ('L L) L			1	2								1	1			1	1		
+	('L L) (L L)		1	1			1		1				2	2		1				
+	L L L ('L)				3	1		1	1				3				1			
+	(L L) L ('L)		1		1	1	1	1	1				3	2	1					
+	L L ('L L)			1	2				1				2				1			
+	(L L) L ('L)		1		1	1	1	1	1				3	2	1					
+/L H L 'L/	L (H) ('L L)		1	1	1				1				3	2	1		1			1
+	L (H) L ('L)		1		2	1		1	1				4	2	1		1			
+	L (H L) ('L)				1	1		1	1				4	1	1		1		1	
+	L H L ('L)				3	1		1	1	1			3				1			
+	L H ('L L)			1	2				1	1			2				1			
+/L L H 'L/	(L L) (H) ('L)		1			1	1	1	1				5	3	1					1
+	(L L) ('H) L		1	1	1		1						2	3	1			1		
+	(L L) ('H L)		1	1			1		1				2	2	1		1		1	
+	L L (H) ('L)	1			2	1		1	1				5	1	1		1			1
+	(L L) (H) ('L)		1			1	1	1	1				5	3	1					1
+/L L L 'H/ 	L L L ('H)				3															
+	L (L L) ('H)	1			1			1	1				4	1	1		1			
+/L L L/	L L ('L)				2	1		1	1				2				1			
+	(L L) ('L)	1				1	1	1	1				2	1						
+	L ('L L)			1	1				1				1				1			
+	('L L) L			1	1		1							1				1		
