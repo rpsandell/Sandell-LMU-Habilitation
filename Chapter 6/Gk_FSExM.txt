@@ -1,0 +1,15 @@
+		Freq	All-Ft-R	Non-Fin-Ft	Non-Fin-Syll	Parse-C	Parse-Syll	WSP
+		Freq	All-Ft-R	Non-Fin-Ft	Non-Fin-Syll	Parse-C	Parse-Syll	WSP
+s s V	('s s) V	1	1				1	
+	s ('s V)			1			1	
+s s VC	('s s) VC	1	1				1	1
+	s ('s VC)			1			1	1
+	s ('s V)C					1	1	
+	('s s) VC		1			1	1	
+s s VCC	s ('s VC)C	1				1	1	1
+	s ('s V)CC					2	1	
+	('s s) VCC		1				1	1
+	s s ('VC)C				1	1	2	
+s s V:	s ('s V:)	1		1			1	1
+	('s s) V:		1				1	1
+	s s (V:')			1	1		2	

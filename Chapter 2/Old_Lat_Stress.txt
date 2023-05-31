@@ -1,0 +1,27 @@
+		Freq	Iamb	Trochee	FtBin	WSP	Rh-Contour	All-Ft-L	All-Ft-R	Leftmost	Rightmost	Align-Wd-L	Align-Wd-R	GrWd=PrWd	Parse-Syll	Parse-Seg	NonFinality-Syll	NonFinality-F	NonInitiality-F	*Clash	WBP	Max-m
+		Freq	Iamb	Trochee	FtBin	WSP	Rh-Contour	All-Ft-L	All-Ft-R	Leftmost	Rightmost	Align-Wd-L	Align-Wd-R	GrWd=PrWd	Parse-Syll	Parse-Seg	NonFinality-Syll	NonFinality-F	NonInitiality-F	*Clash	WBP	Max-m
+/opitumus/	"(,L L) L ('H)"		1					3	2	3					1		1		1			
+	L ('L L) H		1			1		1	1	1	1	1	1		2							
+	"(,L L) ('L H)"		2			1		2	2	2								1	1			
+	('L L) L H	1	1			1			2		2		2		2				1			
+	(L 'L) L H			1		1			2		2		2		2				1			
+/opificina/	"('L L) (,L L) L"		2					2	4		3		1		1				1			
+	"(,L L) ('L L) L"	1	2					2	4	2	1		1		1				1			
+	"L (,L L) ('L L)"		2					4	2	3		1			1			1				
+	"(,L L) L ('L L)"		2					3	3	3					1			1	1			
+	('L L) L L L		1						3		3		1		3				1			
+/putaa/	('puta)	1	1															1	1			1
+	('pu).taa				1	1			1		1		1		1				1			
+/similitudinem/	"(,L L) L ('L L) H"	1	2			1		3	5	3	1		1		2				1			
+	"(,L L) ('L L) L H"		2			1		2	6	2	2		1		2				1			
+/fenestram/	('L H) H		1			2			1		1		1		1				1			
+	L ('H) H	1	1			1		1	1	1	1	1	1		2							
+	(L 'H) H			1		1			1		1		1		1				1			
+/domestikaatim/	"L (,H) L ('H) H"	1				1		4	4	3	1		1		3							
+	('L H) L ('H) H		1			2		3	4	3	1	1	1		2				1			
+	"(,L L) L ('H) H"		1			1		3	4	3	1		1		2				1		1	
+/voluptaatem/	"(,L L) ('H) H"	1	1			1		2	3	2	1		1		1				1		1	
+	"(,L H) ('H) H"		1			2		2	3	2	1		1		1				1			
+	"L (,H) ('H) H"					1		3	3	2	1	1	1		2					1		
+/H H H/	H ('H) H	1				2		1	1	1		1			2							
+	('H) H H					2			2		2		1		2				1			

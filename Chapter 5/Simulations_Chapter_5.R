@@ -1,95 +1,12 @@
-
-
-# Recounting basic surface frequencies for the RV
-all_prosodic_shapes_table <- sort(table(all_prosodic_shapes), decreasing = T) # this table is made from scripting in RV_Prosodic_Shape_Parser.R
-
-# Words with exactly one udātta
-
-#1-syllable
-sum(all_prosodic_shapes_table[grep("^V:?1?C?$", names(all_prosodic_shapes_table))])
-
-#2-syllable
-  # all
-sum(all_prosodic_shapes_table[grep("^[LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-  # initial stress
-sum(all_prosodic_shapes_table[grep("^[LH]1 V:?C?$", names(all_prosodic_shapes_table))])
-  # final stress
-sum(all_prosodic_shapes_table[grep("^[LH] V:?1?C?$", names(all_prosodic_shapes_table))])
-
-#3-syllable
-# all
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-  # initial stress
-sum(all_prosodic_shapes_table[grep("^[LH]1 [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # medial stress
-sum(all_prosodic_shapes_table[grep("^[LH] [LH]1 V:?C?$", names(all_prosodic_shapes_table))])
-  #final stress
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] V:?1?C?$", names(all_prosodic_shapes_table))])
-
-#4-syllable
-# all
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-  #initial stress
-sum(all_prosodic_shapes_table[grep("^[LH]1 [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # peninitial
-sum(all_prosodic_shapes_table[grep("^[LH] [LH]1 [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  #penultimate
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH]1 V:?C?$", names(all_prosodic_shapes_table))])
-  # final
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] V:?1C?$", names(all_prosodic_shapes_table))])
-
-#5-syllable
-# all
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? [LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-  # initial
-sum(all_prosodic_shapes_table[grep("^[LH]1 [LH] [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # peninitial
-sum(all_prosodic_shapes_table[grep("^[LH] [LH]1 [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # medial
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH]1 [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # penultimate
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] [LH]1 V:?C?$", names(all_prosodic_shapes_table))])
-  # final
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] [LH] V:?1C?$", names(all_prosodic_shapes_table))])
-
-#6-syllable
-# all
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? [LH]1? [LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-  # initial
-sum(all_prosodic_shapes_table[grep("^[LH]1 [LH] [LH] [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # peninitial
-sum(all_prosodic_shapes_table[grep("^[LH] [LH]1 [LH] [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # postpenitial
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH]1 [LH] [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  # antepenultimate
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] [LH]1 [LH] V:?C?$", names(all_prosodic_shapes_table))])
-  #penultimate
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] [LH] [LH]1 V:?C?$", names(all_prosodic_shapes_table))])
-  # ultimate
-sum(all_prosodic_shapes_table[grep("^[LH] [LH] [LH] [LH] [LH] V:?1C?$", names(all_prosodic_shapes_table))])
-
-#7-syllable
-# all
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? [LH]1? [LH]1? [LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-# counted by hand
-#8-syllable
-# counted by hand
-sum(all_prosodic_shapes_table[grep("^[LH]1? [LH]1? [LH]1? [LH]1? [LH]1? [LH]1? [LH]1? V:?1?C?$", names(all_prosodic_shapes_table))])
-
-
-### Tokens without any udātta
-all_prosodic_shapes_no_stress_table <- sort(table(all_prosodic_shapes_no_stress), decreasing = T) # this table is made from scripting in RV_Prosodic_Shape_Parser.R
-
-sum(all_prosodic_shapes_no_stress_table[grep("^V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] [LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] [LH] [LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] [LH] [LH] [LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-sum(all_prosodic_shapes_no_stress_table[grep("^[LH] [LH] [LH] [LH] [LH] [LH] [LH] V:?1?C?$", names(all_prosodic_shapes_no_stress_table))])
-
 ### SIMULATIONS FOR CHAPTER FIVE
+
+  # Dependent on functions from "MaxEnt_Learning_2.R":
+    # prepare_data()
+    # sample_candidate()
+    # get_cand_prob()
+    # initial_learner_candidate_probs()
+    # update_rule()
+
 
 ### 1. Simulations with no lexical stress
 
@@ -182,7 +99,7 @@ simple_single_learning_loop_no_lexical <- function(number_iterations = 5000, lea
     }
     # Store the final candidate probabilties and weights in a list
     #if(no_learning > (number_iterations * 0.01)){ # cut off learning if there are many successive instances of no updates
-     # break
+    # break
     #}
   }
   final_learner_outcome <- list(learner_cand_probs, learner_weights, iteration_weights, number_updates) # old_weights_ident_prom,
@@ -448,7 +365,7 @@ make_frequency_frame <- function(generation_results = generation_results, desire
     frequency_input_shapes <- append(frequency_input_shapes, quantity_input_shape)
   }
   table_input_shape_frequencies <- table(frequency_input_shapes)
-
+  
   predicted_new_frequencies <- c()
   for(input_shape in 1:length(final_output_frequencies$Input_Shape)){
     current_input_shape <- final_output_frequencies$Input_Shape[input_shape]
@@ -462,8 +379,8 @@ make_frequency_frame <- function(generation_results = generation_results, desire
 
 
 ## Simulation 1
-  # Single round of learning
-  # Set initial state
+# Single round of learning
+# Set initial state
 learner_weights <- rep(0 ,ncol(tableaux[[2]][[1]])) # set all weights of all (markedness) constraints to 0
 learner_violations <- tableaux[[2]] # extract the violation profiles of all tableaux
 learner_candidate_probs <- list()
@@ -482,7 +399,7 @@ ptm <- proc.time()
 out_fifty <- simple_learning_loop_no_lexical(number_iterations = 10000, learning_rate = 0.01, number_generations = 50) 
 proc.time() - ptm # runs in less than 20 seconds on my system when number_iterations = 5000
 
-  # Five generations of learning
+# Five generations of learning
 learner_weights <- rep(0 ,ncol(tableaux[[2]][[1]])) # set all weights of all (markedness) constraints to 0
 learner_violations <- tableaux[[2]] # extract the violation profiles of all tableaux
 learner_cand_probs <- initial_learner_candidate_probs(learner_violations, learner_weights) # set initial probabilities of candidates in initial state. In this simulation, every candidate is initially equally probable.
@@ -575,13 +492,13 @@ for(sim in 1:sim_quantity){
 # Now you need a way of coding the capture of results
 # Use tables rather than lists
 # Pack dataframes in a list: one dataframe with weights, 
-  # then others with probabilities of interesting 5-syllable forms
+# then others with probabilities of interesting 5-syllable forms
 
 
 # General conclusion from initial low weights: no coherent behavior across generations -- 
-  # the data is too heterogenous overall
-  # Or, the unrestricted model is just able to frequency-match too well
-  # There is no long-term trend whereby candidates of particular sorts become more frequent
+# the data is too heterogenous overall
+# Or, the unrestricted model is just able to frequency-match too well
+# There is no long-term trend whereby candidates of particular sorts become more frequent
 
 
 
@@ -701,7 +618,7 @@ for(i in 1:100){ # get best at 50, best at 1, best at any point
   SSE_markedness_high_50_01_frame_list[[i]] <- cbind(best_SSE_100_simulations[i], min(collector_100_simulations[[i]][[4]][50, ]), names(sort(collector_100_simulations[[i]][[4]][1, ], decreasing = F))[1], min(collector_100_simulations[[i]][[4]][1, ]), best_overall_name, best_overall_value)  
   best_overall_name_vector <- append(best_overall_name_vector, best_overall_name)
   best_overall_value_vector <- append(best_overall_value_vector, best_overall_value)
-  }
+}
 minimum_end <- c() 
 for(i in 1:100){
   minimum_end <- append(minimum_end, min(collector_100_simulations[[i]][[4]][50, ]))
@@ -710,7 +627,7 @@ for(i in 1:100){
 
 for(i in 1:100){
   if(i == 1){
-  complete_SSE_markedness_high_frame <- rbind(SSE_markedness_high_50_01_frame_list[[i]])
+    complete_SSE_markedness_high_frame <- rbind(SSE_markedness_high_50_01_frame_list[[i]])
   }
   else{
     complete_SSE_markedness_high_frame <- rbind(complete_SSE_markedness_high_frame, SSE_markedness_high_50_01_frame_list[[i]])
@@ -735,7 +652,7 @@ for(i in 1:100){
 
 # If there is a sort of categoricity bias included, then we might more often obtain convergence
 # A categoricity bias could be modeled by rounding the probability of the highest probability overt form up to the nearest tenth,
-  # or maybe simply adding 5% of its likelihood to its likelihood, and subtracting the same amount from the likelihood of all other overt forms
+# or maybe simply adding 5% of its likelihood to its likelihood, and subtracting the same amount from the likelihood of all other overt forms
 # In exactly half of all simulations, the best performing grammar in gen 50 had an SSE of less than 50. In some instances, 
 
 # cor
@@ -1143,13 +1060,13 @@ for(i in 30:1){
   biased_best_SSE_overall_10_simulations_2500_tokens <- append(biased_best_SSE_overall_10_simulations_2500_tokens, temp_best_overall_SSE)
   biased_min_best_SSE_overall_10_simulations_2500_tokens <- append(biased_min_best_SSE_overall_10_simulations_2500_tokens, temp_simulation[[4]][which(temp_simulation[[4]] ==  min(temp_simulation[[4]]), arr.ind=TRUE)])
   #if(i == i){
-    biased_best_frame_2500_tokens <- as.data.frame(cbind(biased_best_SSE_gen_50_10_simulations_2500_tokens, biased_min_SSE_gen_50_10_simulations_2500_tokens, biased_best_SSE_overall_10_simulations_2500_tokens, biased_min_best_SSE_overall_10_simulations_2500_tokens))
+  biased_best_frame_2500_tokens <- as.data.frame(cbind(biased_best_SSE_gen_50_10_simulations_2500_tokens, biased_min_SSE_gen_50_10_simulations_2500_tokens, biased_best_SSE_overall_10_simulations_2500_tokens, biased_min_best_SSE_overall_10_simulations_2500_tokens))
   #}
 }
 
 ### The type frequency learner
-  ## First, getting the type frequencies of the Vedic data.
-  ## Creating a table with the type frequencies
+## First, getting the type frequencies of the Vedic data.
+## Creating a table with the type frequencies
 
 
 all_prosodic_shapes_types_frame <- read.table("RV_All_prosodic_shapes_types.txt", header=T, sep="\t")
@@ -1427,17 +1344,17 @@ for(i in 89:100){
 
 types_prosodic_shapes_2_5_syll <- all_prosodic_shapes_types_frame$all_prosodic_shapes_stressed_rv_unique[limited_2_3_4_5_indices_types]
 for(i in 1:length(types_prosodic_shapes_2_5_syll))
-
-
-## Simulations with MAX-PROM: Lexical Stress is in!
+  
+  
+  ## Simulations with MAX-PROM: Lexical Stress is in!
   # This assumes, on the teacher's side, that the mapping of an overt form with primary stress on a given syllable to a parsed output with
   # primary stress on a different syllable is disallowed. That is, mappings like [H1 L V] --> H (L1 V) are not included whatsoever. In other
   # words, the data is always taken seriously: an overt form with stress in a given position must map onto a parse in that position
   # Nonetheless, learners are permitted to consider the possibility that a lexical representation /H1 L V/ could have an output H (L1 V), if the 
   # markedness constraints militating in favor of the latter are strong enough and lexical stress is sufficiently weak. 
-
-
-# identifying all 1-, 6-, 7- and 8-syllable forms and removing them
+  
+  
+  # identifying all 1-, 6-, 7- and 8-syllable forms and removing them
 # you created an object called "all_prosodic_shapes_stressed_rv", which is a named vector of characters with length 129459
 #rv_overt_2_to_5_syllable_forms <- c()
 
@@ -1458,7 +1375,7 @@ initial_learner_lexicon <- rv_overt_2_to_5_syllable_forms_types_freq_table
 initial_learner_lexicon$`Token Freq` <- rep(0, nrow(initial_learner_lexicon))
 
 # you need to b able to reverse engineer a surface stress for a word-type based on outputs
-  # That is, if the token is supposed to be aBi;, but the teacher after the previous generation of learning would put out a;Bi,  
+# That is, if the token is supposed to be aBi;, but the teacher after the previous generation of learning would put out a;Bi,  
 
 
 current_token <- sample(rv_overt_2_to_5_syllable_forms, 1) # sample a really occurring stressed surface toke
@@ -1468,12 +1385,12 @@ current_token <- sample(rv_overt_2_to_5_syllable_forms, 1) # sample a really occ
 #split_token_shape <- strsplit(current_token_shape, " ")
 
 ### Simulation 1: Overwhelming MAX-PROM effect, different learning rates for MAX-PROM
-  ## Here, no reference to token frequency is ever made
-  ## Every teacher winner does not violate Max-Prom, every learner loser does
-  ## Hence, it is to be expected that the weight of MAX-Prom rises with every weight update, and will do so until candidates violating Max-Prom become impossible
+## Here, no reference to token frequency is ever made
+## Every teacher winner does not violate Max-Prom, every learner loser does
+## Hence, it is to be expected that the weight of MAX-Prom rises with every weight update, and will do so until candidates violating Max-Prom become impossible
 
 ## Here the function for the learning loop
-  ## The function update_rule needs to be adjusted so that the learning rate for MAX-PROM is potentially different
+## The function update_rule needs to be adjusted so that the learning rate for MAX-PROM is potentially different
 update_rule_MAX_PROM <- function(teacher_winner, learner_winner, rate, max_prom_rate, learner_weights){
   rates <- c(rep(rate, ncol(vedic_lexical_tableaux[[2]][[1]])-1), max_prom_rate) # this assumes that MAX-PROM is the rightmost constraint in the tableaux
   change_in_weights <- rates*(learner_winner - teacher_winner) # learner-teacher or teacher-learner -- I think the former for positive weights; cf. Jarosz 2016: 204
@@ -1710,7 +1627,7 @@ simple_learning_loop_lexical_1 <- function(tableaux = my_lexical_tableaux, numbe
     return(final_generation_results)
   }
 }
-  ## Set initial learner weights, learner candidate probs
+## Set initial learner weights, learner candidate probs
 vedic_lexical_tableaux <- prepare_data("C_Skt_RIP_Lexical_Stress_corrected.txt")
 learner_weights <- c(rep(5, ncol(vedic_lexical_tableaux[[2]][[1]])-1), 0) # set all weights of all (markedness) constraints to 0
 learner_violations <- vedic_lexical_tableaux[[2]] # extract the violation profiles of all tableaux
@@ -2110,10 +2027,10 @@ plot(SSE_plot_germ_sim_1_c)
 #lexical_out_50_gen_1_weight_10 <- simple_learning_loop_lexical_1(tableaux = vedic_lexical_tableaux, number_iterations = 15000, number_generations = 50)
 
 ### Simulation 2: Token frequency effects with Max-Prom
-    # Violations of MAX-Prom are multiplied by the log of a lexeme's token frequency
-    # individual lexical items can be restructured
-    # learning rate for MAX-Prom is set at the default for a token frequency of 1 or 2, otherwise divided by the log of a lexeme's token frequency
-      # for this, you will need to make some adjustments to 
+# Violations of MAX-Prom are multiplied by the log of a lexeme's token frequency
+# individual lexical items can be restructured
+# learning rate for MAX-Prom is set at the default for a token frequency of 1 or 2, otherwise divided by the log of a lexeme's token frequency
+# for this, you will need to make some adjustments to 
 #rv_overt_2_to_5_syllable_forms_types_freq_table # contains the token frequencies of each surface type
 View(initial_learner_lexicon)
 
@@ -2526,7 +2443,7 @@ test_lexical_freq_50_big_weight_5 # markedness at 5
 # as expected, when initial weights of markedness constraints are lower, it is easier for MAX-PROM to be driven up to a point that even highly marked structures 
 # (primary stress on a final light syllable) can be guaranteed. An initial weight of 5, at least for the 
 # The total number of tokens that condition updating is not large: under 8%
-  # Not
+# Not
 test_cand_probs <- initial_learner_candidate_probs(tableaux_copy[[2]], learned_weights_5[1, ])
 initial_learner_candidate_probs
 
@@ -2535,767 +2452,3 @@ learner_weights <- learner_weights[-c(18)]
 learner_violations <- tableaux_copy[[2]] # extract the violation profiles of all tableaux
 learner_candidate_probs <- list()
 learner_cand_probs <- initial_learner_candidate_probs(learner_violations, learner_weights) # s
-
-
-
-
-### Generating winners for specific stress patterns for calculating SSEs
-for_my_overts <- simple_learning_loop_no_lexical(number_iterations = 1000, learning_rate = 0.1, number_generations = 1)
-
-
-overt_shapes <- for_my_overts[[3]]$Output_Overt
-input_overt_shapes_frame <- as.data.frame(cbind(for_my_overts[[3]]$Input_Shape, for_my_overts[[3]]$Output_Overt))
-
-
-
-# Quantity-insensitive
-  # initial stress
-default_vector <- rep(0, 503)
-initial <-  default_vector 
-initial[grep("^[LH]1 ", overt_shapes)] <- 1
-
-#final stress
-final <-  default_vector
-final[grep(" V:?1C?$", overt_shapes)] <- 1
-
-# peninitial stress
-peninitial <- default_vector
-peninitial[grep("^[LH] [LHV]:?1C?", overt_shapes)] <- 1
-
-#penultimate stress
-penult <- default_vector
-penult[grep("[LH]1 V:?C?$", overt_shapes)] <- 1
-
-#antepenultimate stress
-antepenult <- default_vector
-antepenult[grep("^[LH]1 V:?C?$", overt_shapes)] <- 1
-antepenult[grep("[LH]1 [LH] V:?C?$", overt_shapes)] <- 1
-
-# Unbounded quantity-sensitive
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H)|(V:)|(VC)", temp_split)
-  if(length(grep("(H1)|(V:1)|(V1C)", temp_split)) > 1){
-    print(overt_shapes[i])
-  }
-}
-
-
-DTS_L <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes[i])) == 1){
-      DTS_L[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      DTS_L[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == min(temp_match)){
-          DTS_L[i] <- 1
-      }
-    }
-  }
-}
-
-DTS_R <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("V1$", overt_shapes[i])) == 1){
-      DTS_R[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      DTS_R[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == max(temp_match)){
-        DTS_R[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-DTO_L <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("V1$", overt_shapes[i])) == 1){
-      DTO_L[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      DTO_L[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == min(temp_match)){
-        DTO_L[i] <- 1
-      }
-    }
-  }
-}
-
-DTO_R <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes[i])) == 1){
-      DTO_R[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      DTO_R[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == max(temp_match)){
-        DTO_R[i] <- 1
-      }
-    }
-  }
-}
-
-
-DTS_R_FSM <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("L1 V:?C?", overt_shapes[i])) == 1){
-      DTS_R_FSM[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)", overt_shapes[i])) == 1){
-      DTS_R_FSM[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)", overt_shapes[i])) == 1){
-      if(grep("(H1)", temp_split) == max(temp_match)){
-        DTS_R_FSM[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-DTO_R_FSM <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes[i])) == 1){
-      DTO_R_FSM[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)", overt_shapes[i])) == 1){
-      DTO_R_FSM[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)", overt_shapes[i])) == 1){
-      if(grep("(H1)", temp_split) == max(temp_match)){
-        DTO_R_FSM[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-## Other quantity-sensitive systems
-C_Skt_Rule <- default_vector
-# for(i in 1:length(overt_shapes)){
-#   temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-#   if(length(temp_split == 2)){
-#     if(length(grep("H1", overt_shapes[i])) == 1){
-#       C_Skt_Rule[i] <- 1
-#       next
-#     }
-#     else if(length(grep("H", overt_shapes[i])) == 0){
-#       if(length(grep("V:1", overt_shapes[i])) == 1){
-#         C_Skt_Rule[i] <- 1
-#         next
-#       }
-#       else{
-#         C_Skt_Rule[i] <- 1
-#         next
-#       }
-#     }
-#   }
-#   if(length(temp_split) > 2){
-#     if(temp_split[length(temp_split) - 1] == "H1"){
-#       C_Skt_Rule[i] <- 1
-#       next
-#     }
-#     else if(temp_split[length(temp_split) - 1] == "L"){
-#       if(temp_split[length(temp_split) - 2] == "H1"){
-#         C_Skt_Rule[i] <- 1
-#         next
-#       }
-#       else if(length(temp_split) > 3){
-#         if(temp_split[length(temp_split) - 3] == "H1"){
-#           C_Skt_Rule[i] <- 1
-#           next
-#         }
-#         else if(length(temp_split) == 4){
-#           if(temp_split[length(temp_split) - 3] == "L1"){
-#             C_Skt_Rule[i] <- 1
-#             next
-#           }
-#         }
-#         else if(length(temp_split) == 5){
-#           if(temp_split[length(temp_split) - 2] == "L1"){
-#             C_Skt_Rule[i] <- 1
-#             next
-#           }
-#         }
-#       }
-#     }
-#   }
-# }
-
-
-
-C_Lat_Rule <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  if(length(temp_split) == 2){
-    if(length(grep("[LH]1", temp_split[1])) == 1){
-        C_Lat_Rule[i] <- 1
-    }
-  }
-  else{
-    if(length(grep("H1", temp_split[length(temp_split) - 1])) == 1){
-      C_Lat_Rule[i] <- 1
-    }
-    else{
-      if(length(grep("L", temp_split[length(temp_split) - 1])) == 1){
-        if(length(grep("H1", temp_split[length(temp_split) - 2])) == 1){
-          C_Lat_Rule[i] <- 1
-        }
-        else{
-          if(length(grep("L1", temp_split[length(temp_split) - 2])) == 1){
-            C_Lat_Rule[i] <- 1
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-initial_iambs <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(temp_split) == 2){
-    if(temp_split[1] == "L"){
-      initial_iambs[i] <- 1
-    }
-    else if(temp_split[1] == "H1"){
-      initial_iambs[i] <- 1
-    }
-  }
-  else{
-    if(length(grep("H1", temp_split[1])) == 1){
-      initial_iambs[i] <- 1
-    }
-    else if(temp_split[1] == "L"){
-      if(length(grep("[LH]1", temp_split[2])) == 1){
-        initial_iambs[i] <- 1
-      }
-    }
-  }
-}
-
-right_trochees <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(grep("(V:1C?)|(V1C)$", temp_split[length(temp_split)])) == 1){
-    right_trochees[i] <- 1
-    next
-  }
-  else{
-    if(length(grep("V$", temp_split[length(temp_split)])) == 1){
-      if(length(grep("(L1)|(H1)", temp_split[length(temp_split) - 1])) == 1){
-      right_trochees[i] <- 1
-      }
-    }
-  }
-}
-
-DTS_L_extrametrical_above_2 <- default_vector
-for(i in 1:length(overt_shapes)){
-  temp_split <- unlist(strsplit(overt_shapes[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(temp_split) == 2){
-    if(length(grep("H1", temp_split[1])) == 1){
-      DTS_L_extrametrical_above_2[i] <- 1
-    }
-    if(length(grep("L$", temp_split[1])) == 1){
-      if(length(grep("(V:1C?)|(V1C)", temp_split[2])) == 1){
-        DTS_L_extrametrical_above_2[i] <- 1
-      }
-    }
-    else if(length(grep("L1$", temp_split[1])) == 1){
-      if(length(grep("V$", temp_split[2])) == 1){
-        DTS_L_extrametrical_above_2[i] <- 1
-      }
-    }
-  }
-  else if(length(temp_split) > 2){
-    if(length(temp_match) == 0){
-      if(length(grep("^L1", temp_split[[1]])) == 1){
-        DTS_L_extrametrical_above_2[i] <- 1
-      }
-    }
-    else if(length(temp_match) == 1){
-      if(length(grep("H1", temp_split)) == 1){
-        DTS_L_extrametrical_above_2[i] <- 1
-      }
-    }
-    else if(length(temp_match) >1){
-      if(length(grep("H1", temp_split)) == 1){
-        if(grep("H1", temp_split) == min(temp_match)){
-          DTS_L_extrametrical_above_2[i] <- 1
-        }
-      }
-    }
-  }
-}
-
-
-stress_pattern_matches <- cbind(input_overt_shapes_frame, initial, peninitial, final, penult, antepenult, DTS_L, DTS_R, DTO_L, DTO_R, DTS_R_FSM, DTO_R_FSM, C_Lat_Rule, initial_iambs)
-#stress_patterns_for_SSE <- cbind(stress_patterns_for_SSE, right_trochees)
-stress_patterns_for_SSE <- cbind(stress_patterns_for_SSE, DTS_L_extrametrical_above_2)
-
-write.table(stress_patterns_for_SSE, "Stress_Pattern_Matches_corrected.txt", sep="\t", quote=FALSE, row.names=FALSE)
-
-
-write.table(right_trochees, "right_trochees.txt", sep="\t", quote=FALSE, row.names=FALSE)
-
-
-
-
-
-
-
-new_overt_shapes <- c()
-duplicates <- c()
-overt_index <- c()
-for(i in 1:length(overt_shapes)){
-  if(overt_shapes[i] %in% new_overt_shapes){
-    duplicates <- append(duplicates, overt_shapes[i])
-    overt_index <- append(overt_index, i)
-  }
-  else{
-    new_overt_shapes <- append(new_overt_shapes, overt_shapes[i])
-  }
-}
-
-get_SSE <- function(vector_1, vector_2){
-  return(sum((vector_1 - vector_2 )^2 ))
-}
-
-stress_patterns_for_SSE <- read.table("Stress_Pattern_Matches_corrected.txt", header=T, sep="\t")
-
-### Making SSE tables for lexical stress
-vedic_lexical_tableaux <- prepare_data("C_Skt_RIP_Lexical_Stress_corrected.txt")
-learner_weights <- c(rep(5, ncol(vedic_lexical_tableaux[[2]][[1]])-1), 0) # set all weights of all (markedness) constraints to 0
-learner_violations <- vedic_lexical_tableaux[[2]] # extract the violation profiles of all tableaux
-learner_candidate_probs <- list()
-learner_cand_probs <- initial_learner_candidate_probs(lexical_learner_violations, lexical_learner_weights) # set initial probabilities of candidates in initial state. In this simulation, every candidate is initially equally probable.
-
-for_my_overts_lexical <- simple_learning_loop_lexical_1(tableaux = vedic_lexical_tableaux, number_iterations = 1000, learning_rate = 0.1, learning_rate_max_prom = 0.01, number_generations = 1, initial_weights = lexical_learner_weights)
-
-
-overt_shapes_lexical <- for_my_overts_lexical[[3]]$Output_Overt
-input_overt_shapes_frame_lexical <- as.data.frame(cbind(for_my_overts_lexical[[3]]$Input_Shape, for_my_overts_lexical[[3]]$Output_Overt))
-
-
-# initial stress
-# Quantity-insensitive
-default_vector_lexical <- rep(0, 2238)
-initial_lexical <-  default_vector_lexical
-initial_lexical[grep("^[LH]1 ", overt_shapes_lexical)] <- 1
-
-final_lexical <-  default_vector_lexical
-final_lexical[grep(" V:?1C?$", overt_shapes_lexical)] <- 1
-
-peninitial_lexical <- default_vector_lexical
-peninitial_lexical[grep("^[LH] [LHV]:?1C?", overt_shapes_lexical)] <- 1
-
-penult_lexical <- default_vector_lexical
-penult_lexical[grep("[LH]1 V:?C?$", overt_shapes_lexical)] <- 1
-
-antepenult_lexical <- default_vector_lexical
-antepenult_lexical[grep("^[LH]1 V:?C?$", overt_shapes_lexical)] <- 1
-antepenult_lexical[grep("[LH]1 [LH] V:?C?$", overt_shapes_lexical)] <- 1
-
-# Unbounded quantity-sensitive
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H)|(V:)|(VC)", temp_split)
-  if(length(grep("(H1)|(V:1)|(V1C)", temp_split)) > 1){
-    print(overt_shapes_lexical[i])
-  }
-}
-
-
-DTS_L_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes_lexical[i])) == 1){
-      DTS_L_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      DTS_L_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == min(temp_match)){
-        DTS_L_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-DTS_R_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("V1$", overt_shapes_lexical[i])) == 1){
-      DTS_R_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      DTS_R_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == max(temp_match)){
-        DTS_R_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-DTO_L_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("V1$", overt_shapes_lexical[i])) == 1){
-      DTO_L_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      DTO_L_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == min(temp_match)){
-        DTO_L_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-DTO_R_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)|(V:1?)|(V1?C)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes_lexical[i])) == 1){
-      DTO_R_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      DTO_R_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)|(V:1)|(V1C)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)|(V:1)|(V1C)", temp_split) == max(temp_match)){
-        DTO_R_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-
-DTS_R_FSM_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("L1 V:?C?", overt_shapes_lexical[i])) == 1){
-      DTS_R_FSM_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)", overt_shapes_lexical[i])) == 1){
-      DTS_R_FSM_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)", temp_split) == max(temp_match)){
-        DTS_R_FSM_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-DTO_R_FSM_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(length(temp_match) == 0){
-    if(length(grep("^L1", overt_shapes_lexical[i])) == 1){
-      DTO_R_FSM_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) == 1){
-    if(length(grep("(H1)", overt_shapes_lexical[i])) == 1){
-      DTO_R_FSM_lexical[i] <- 1
-    }
-  }
-  else if(length(temp_match) > 1){
-    if(length(grep("(H1)", overt_shapes_lexical[i])) == 1){
-      if(grep("(H1)", temp_split) == max(temp_match)){
-        DTO_R_FSM_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-
-
-## Other quantity-sensitive systems
-C_Skt_Rule_lexical <- default_vector_lexical # If length 2, match the exact shapes and plug in the 1; if length is above 2, plug in a 1 at a heavy penult or a 1 at a heavy antepenult
-# If length == 3, plug in a 1 on the antepenult
-# If length == 4, plug in a 1 on the preantepenult if the penult and antepenult are light
-# If length == 5, plug in a 1 on the preantepenult if the penult and antepenult are light; else, put a 1 on a light penult
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  if(length(temp_split) == 2){
-    if(length(grep("H1", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-      next
-    }
-    if(length(grep("^L1 VC?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-    if(length(grep("^L V:1C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    } 
-  }
-  if(length(temp_split) > 2){
-    if(length(grep("H1 V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-    else if(length(grep("H1 L V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-  }
-  if(length(temp_split) == 3){
-    if(length(grep("^L1 L V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-  }
-  if(length(temp_split) == 4){
-    if(length(grep("^[HL]1 L L V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-  }
-  if(length(temp_split) == 5){
-    if(length(grep("H1 L L V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-    else if(length(grep("L1 L V:?C?$", overt_shapes_lexical[i])) == 1){
-      C_Skt_Rule_lexical[i] <- 1
-    }
-  }
-}
-
-C_Lat_Rule_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  if(length(temp_split) == 2){
-    if(length(grep("[LH]1", temp_split[1])) == 1){
-      C_Lat_Rule_lexical[i] <- 1
-    }
-  }
-  else{
-    if(length(grep("H1", temp_split[length(temp_split) - 1])) == 1){
-      C_Lat_Rule_lexical[i] <- 1
-    }
-    else{
-      if(length(grep("L", temp_split[length(temp_split) - 1])) == 1){
-        if(length(grep("H1", temp_split[length(temp_split) - 2])) == 1){
-          C_Lat_Rule_lexical[i] <- 1
-        }
-        else{
-          if(length(grep("L1", temp_split[length(temp_split) - 2])) == 1){
-            C_Lat_Rule_lexical[i] <- 1
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-initial_iambs_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(temp_split) == 2){
-    if(temp_split[1] == "L"){
-      initial_iambs_lexical[i] <- 1
-    }
-    else if(temp_split[1] == "H1"){
-      initial_iambs_lexical[i] <- 1
-    }
-  }
-  else{
-    if(length(grep("H1", temp_split[1])) == 1){
-      initial_iambs_lexical[i] <- 1
-    }
-    else if(temp_split[1] == "L"){
-      if(length(grep("[LH]1", temp_split[2])) == 1){
-        initial_iambs_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-right_trochees_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(grep("(V:1C?)|(V1C)$", temp_split[length(temp_split)])) == 1){
-    right_trochees_lexical[i] <- 1
-    next
-  }
-  else{
-    if(length(grep("V$", temp_split[length(temp_split)])) == 1){
-      if(length(grep("(L1)|(H1)", temp_split[length(temp_split) - 1])) == 1){
-        right_trochees_lexical[i] <- 1
-      }
-    }
-  }
-}
-
-DTS_L_extrametrical_above_2_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  temp_split <- unlist(strsplit(overt_shapes_lexical[i], split = " "))
-  temp_match <- grep("(H1?)", temp_split)
-  if(is.na(temp_split)){
-    next
-  }
-  if(length(temp_split) == 2){
-    if(length(grep("H1", temp_split[1])) == 1){
-      DTS_L_extrametrical_above_2_lexical[i] <- 1
-    }
-    if(length(grep("L$", temp_split[1])) == 1){
-      if(length(grep("(V:1C?)|(V1C)", temp_split[2])) == 1){
-        DTS_L_extrametrical_above_2_lexical[i] <- 1
-      }
-    }
-    else if(length(grep("L1$", temp_split[1])) == 1){
-      if(length(grep("V$", temp_split[2])) == 1){
-        DTS_L_extrametrical_above_2_lexical[i] <- 1
-      }
-    }
-  }
-  else if(length(temp_split) > 2){
-    if(length(temp_match) == 0){
-      if(length(grep("^L1", temp_split[[1]])) == 1){
-        DTS_L_extrametrical_above_2_lexical[i] <- 1
-      }
-    }
-    else if(length(temp_match) == 1){
-      if(length(grep("H1", temp_split)) == 1){
-        DTS_L_extrametrical_above_2_lexical[i] <- 1
-      }
-    }
-    else if(length(temp_match) >1){
-      if(length(grep("H1", temp_split)) == 1){
-        if(grep("H1", temp_split) == min(temp_match)){
-          DTS_L_extrametrical_above_2_lexical[i] <- 1
-        }
-      }
-    }
-  }
-}
-
-perfect_lexical_lexical <- default_vector_lexical
-for(i in 1:length(overt_shapes_lexical)){
-  UR_to_surface_temp <- gsub("/", "", input_overt_shapes_frame_lexical$V1[i])
-  if(overt_shapes_lexical[i] == UR_to_surface_temp){
-    perfect_lexical_lexical[i] <- 1
-  }
-}
-
-stress_pattern_matches_for_SSE_lexical <- cbind(input_overt_shapes_frame_lexical, initial_lexical, peninitial_lexical, final_lexical, penult_lexical, antepenult_lexical, DTS_L_lexical, DTS_R_lexical, DTO_L_lexical, DTO_R_lexical, DTS_R_FSM_lexical, DTO_R_FSM_lexical, C_Lat_Rule_lexical, C_Skt_Rule_lexical, initial_iambs_lexical, right_trochees_lexical, DTS_L_extrametrical_above_2_lexical, perfect_lexical_lexical)
-
-### Write out the table of stress patterns for SSE
-write.table(stress_pattern_matches_for_SSE_lexical, "Stress_Pattern_Matches_corrected_lexical.txt", sep="\t", quote=FALSE, row.names=FALSE)
-
-# Read them in
-stress_patterns_for_SSE_lexical <- read.table("Stress_Pattern_Matches_corrected_lexical.txt", header=T, sep="\t")
