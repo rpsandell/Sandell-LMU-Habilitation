@@ -160,7 +160,6 @@ get_cand_prob <- function(violations, weights){
   # Relies on the function get_cand_prob() above.
 
 get_plog <- function(weights, violations, cand_freqs, mu = prespecified_weights, sigma2 = prespecified_deviations){ # Note: it doesn't matter what the starting weights are for the purposes of optimization. The get_plog function will return a PLOG for a given set of weights, but the optimization function looks for the minimum possible PLOG.
-  ## FIX THIS
   ## mu must be a vector of prespecified weights
   ## sigma must be a vector of prespecified standard deviations
   plogs <- c()
@@ -175,9 +174,6 @@ get_plog <- function(weights, violations, cand_freqs, mu = prespecified_weights,
   }
   return(sum(plogs)) # return the sum of all the individual PLOGs
 }
-
-# set a mu and sigma here if you need them
-# e.g., mu = 
 
 # 6. maxent_batch_weights(): return the optimized weights based on minimizing the PLOG calculated using get_plog() above, using the "L-BFGS-B" optimization method
   maxent_batch_weights <- function(user_initial_weights = F, user_initial_cand_freqs = F, tableaux = tableaux, lower_weight = 0, upper_weight = 50, my_initial_weights = c(), my_target_weights = c(), my_initial_deviations = c(), my_candidate_frequencies = c()){#, hidden_structure_combos = F

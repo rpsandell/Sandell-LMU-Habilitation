@@ -1,6 +1,170 @@
 
+set.seed(4172)
+setwd("/Users/rpsandell/Documents/Dropbox/GitHub/Sandell-LMU-Habilitation/Chapter 5")
+
+
+# Function for calculating SSEs
+get_SSE <- function(vector_1, vector_2){
+  return(sum((vector_1 - vector_2 )^2 ))
+}
+
+# Table of various categorical fixed stress patterns
+stress_patterns_for_SSE <- read.table("Stress_Pattern_Matches_corrected.txt", header=T, sep="\t")
+
+# Functions for MaxEnt grammar with online update Rule (see MaxEnt_Learning_2.R)
+# Read in tableaux and get candidate frequencies plus candidate violation profiles
+prepare_data <- function(OT_Table_File){
+  raw_file <- read.table(file =  OT_Table_File, sep="\t", header=F, fill=T, stringsAsFactors = F, skip=2, quote=NULL) # read in an OTSoft-formatted file, ignoring the first two rows with constaint names
+  raw_file[is.na(raw_file)] <- 0 # replace all empty constraint evaluations with 0
+  header <- unlist(strsplit(scan(OT_Table_File, what="char", sep="\n")[1], split="\t")) # get the constraint names from the same files
+  colnames(raw_file) <- header # add the constraint names as a header to the candidate data frame
+  constraint_names <- header[4:length(header)] # get the names of the constraints
+  number_of_constraints <- length(constraint_names) # get the number of constraints
+  
+  cand_freqs <- list()
+  current_tableau <- 0
+  # for(i in 1:length(nrow(raw_file))){
+  #   current_cand_freqs <- c()
+  #   if(raw_file[i,1] != ""){
+  #     current_tableau <- current_tableau + 1
+  #     current_cand_freqs <- append(current_cand_freqs, raw_file[i,3])
+  #   }
+  #   else{
+  #   }
+  #   for(j in i+1:length(nrow(raw_file))){
+  #     if(raw_file[j,1] == ""){
+  #       current_cand_freqs <- append(current_cand_freqs, raw_file[i+1,3])
+  #     }
+  #     else{
+  #       break
+  #     }
+  #   }
+  #   cand_freqs[[current_tableau]] <- current_cand_freqs
+  # }
+  # 
+  
+  cand_freqs <- list()
+  current_tableau <- 0
+  for(i in which(raw_file[,1] != "")){
+    current_tableau <- current_tableau +1
+    current_cand_freqs <- c()
+    current_cand_freqs <- append(current_cand_freqs, raw_file[i,3])
+    iterator <- i
+    while((raw_file[iterator+1,1] == "")){
+      current_cand_freqs <- append(current_cand_freqs, raw_file[iterator+1,3])
+      if(iterator+1 < nrow(raw_file)){
+        iterator <- iterator + 1
+      }
+      else{
+        break
+      }
+    }
+    cand_freqs[[current_tableau]] <- current_cand_freqs
+  }
+  
+  violations <- list()
+  current_tableau <- 0
+  for(i in which(raw_file[,1] != "")){
+    number_candidates <- 1
+    current_tableau <- current_tableau +1
+    current_tableau_violations <- c()
+    current_tableau_violations <- append(current_tableau_violations, as.numeric(raw_file[i,4:ncol(raw_file)]))
+    iterator <- i
+    while((raw_file[iterator+1,1] == "")){
+      current_tableau_violations <- append(current_tableau_violations, as.numeric(raw_file[iterator+1,4:ncol(raw_file)]))
+      number_candidates <- number_candidates + 1
+      if(iterator+1 < nrow(raw_file)){
+        iterator <- iterator + 1
+      }
+      else{
+        break
+      }
+    }
+    total_tableau_violations <- matrix(current_tableau_violations, nrow=number_candidates, byrow = T)
+    violations[[current_tableau]] <- total_tableau_violations
+  }
+  
+  candidates <- list()
+  current_tableau <- 0
+  for(i in which(raw_file[,1] != "")){
+    current_tableau <- current_tableau +1
+    current_candidates <- c()
+    current_candidates <- append(current_candidates, raw_file[i,2])
+    iterator <- i
+    while((raw_file[iterator+1,1] == "")){
+      current_candidates <- append(current_candidates, raw_file[iterator+1,2])
+      if(iterator+1 < nrow(raw_file)){
+        iterator <- iterator + 1
+      }
+      else{
+        break
+      }
+    }
+    candidates[[current_tableau]] <- current_candidates
+  }
+  
+  tableaux <- list(cand_freqs, violations, candidates)
+  
+  names(tableaux[[1]]) <- as.character(raw_file[which(raw_file[,1] != ""), 1])
+  names(tableaux[[2]]) <- as.character(raw_file[which(raw_file[,1] != ""), 1])
+  names(tableaux[[3]]) <- as.character(raw_file[which(raw_file[,1] != ""), 1])
+  
+  return(tableaux)
+  
+}
+  #. 0 Sample candidates from tableaux
+sample_candidate <- function(tableaux, token_freqs_of_types=F){
+  # Can be improved by adding token frequencies of the types and then using that as a probability for the tableaux sampling
+  if(token_freqs_of_types == T){
+    current_tableaux <- sample(length(tableaux[[1]]), 1, prob = tableaux_probs)
+  }
+  else{
+    current_tableaux <- sample(length(tableaux[[1]]), 1)
+  }
+  current_candidate <- sample(unlist(tableaux[[3]][current_tableaux]), size=1, prob = unlist(tableaux[[1]][current_tableaux]))
+  return(current_candidate)
+}
+
+  # 1. get probabilities of candidates given current constraint weight
+get_cand_prob <- function(violations, weights){
+  # Because vectors are "recycled" by column, violation vectors need to be transposed to be arranged by column, rather than row, then transposed back.
+  applied_weights <- t(t(violations)*weights) # Calculate the "force" of each violation
+  harmonies = apply(applied_weights, 1, sum) # Sum across each row to obtain the Harmony (H) of each candidate.
+  e_harmonies = exp(-1*harmonies) # Take the exponential of the harmonies (e-harmony)
+  Z = sum(e_harmonies) # Sum the e-harmonies to obtain the denominator (Z) for calculating candidate probabilities
+  cand_probs <- e_harmonies/Z # Candidate probabilites are the e-harmony of each candidate divided by their sum.
+  return(cand_probs)
+}
+
+# 2.Set initial candidate probabilities 
+initial_learner_candidate_probs <- function(learner_violations = learner_violations, learner_weights = learner_weights){
+  learner_candidate_probs <- list()
+  for(i in 1:length(learner_violations)){
+    current_candidate_probs <- get_cand_prob(violations = learner_violations[[i]], weights = learner_weights)
+    learner_candidate_probs[[i]] <- current_candidate_probs
+  }
+  return(learner_candidate_probs)
+}
+learner_cand_probs <- initial_learner_candidate_probs(learner_violations, learner_weights)
+
+# 3. Update constraint weights
+# Online Learning: Sampling plus update with delta rule
+# Important question here: should negative changes in weights be set to 0, or should any resulting negative learner weights be set at 0.
+update_rule <- function(teacher_winner, learner_winner, rate, learner_weights, negative_weights = F){
+  change_in_weights <- rate*(learner_winner - teacher_winner) # learner-teacher or teacher-learner -- I think the former for positive weights; cf. Jarosz 2016: 204
+  #negatives <- which(change_in_weights < 0)
+  #change_in_weights[negatives] <- 0
+  learner_weights <- learner_weights + change_in_weights
+  if(negative_weights == F){
+    negatives <- which(learner_weights < 0) # GLA allows negative weights, I think
+    learner_weights[negatives] <- 0
+  }
+  return(learner_weights)
+}
+
+
 # Testing learnability of the C. Skt. rule with online MaxEnt (Section 5.2.5)
-#
+# Find the functions get_position_probabilites() and 
 
 # getting SSE for stress patterns
 # assumes a dataframe called "stress_patterns_for_SSE" in the global environment
@@ -306,7 +470,7 @@ while(number_tokens < 82000){
   temp_output <- simple_learning_loop_no_lexical_c_skt_test(number_iterations = number_tokens, initial_weights = c_skt_weights)
   c_skt_tests[[indexer]] <- temp_output
   tokens_test <- append(tokens_test, number_tokens)
-  c_skt_SSEs <- append(c_skt_SSEs, temp_output[[4]][1, 13]) # index [1, 13] is the C
+  c_skt_SSEs <- append(c_skt_SSEs, temp_output[[4]][1, 13]) # index [1, 13] is the Classical Sanskrit vector of SSEs
   indexer <- indexer + 1
   number_tokens <- number_tokens + 2000
 }

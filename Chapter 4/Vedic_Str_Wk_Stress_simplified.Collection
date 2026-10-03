@@ -1,0 +1,257 @@
+File type = "ooTextFile"
+Object class = "Collection"
+
+size = 2
+item[]:
+	item[1]:
+		class = "OTGrammar 1"
+		name = "Gram"
+<LinearOT>
+11 constraints
+constraint [1]: "MainRight" 100 100 ! MainRight
+constraint [2]: "Anchor-L-Ft" 100 100 ! Anchor-L-Ft
+constraint [3]: "Anchor-R-Ft" 100 100 ! Anchor-R-Ft
+constraint [4]: "All-Ft-L" 100 100 ! All-Ft-L
+constraint [5]: "All-Ft-R" 100 100 ! All-Ft-R
+constraint [6]: "Trochee" 100 100 ! Trochee
+constraint [7]: "Head-Faith-Ft-L" 100 100 ! Head-Faith-Ft-L
+constraint [8]: "HeadFaith-Ft-R" 100 100 ! HeadFaith-Ft-R
+constraint [9]: "CULM" 100 100 ! CULM
+constraint [10]: "Max-V" 100 100 ! Max-V
+constraint [11]: "Anchor-L-Ft-gen-pl" 100 100 ! Anchor-L-Ft-gen-pl
+
+0 fixed rankings
+
+28 tableaus
+input [1]: "/ma-(ti-m/" 3
+	candidate [1]: "ma.('tim)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('ma.tim)" 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [3]: "(ma.'tim)" 0.0 1.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0
+input [2]: "/man-as)/" 4
+	candidate [1]: "('ma.nas)" 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ma.('nas)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "(ma.'nas)" 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "('ma).nas" 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0
+input [3]: "/pad-(i/" 3
+	candidate [1]: "pa.('di)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('pa.di)" 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "('pa).di" 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [4]: "/(gav)-(e:/" 4
+	candidate [1]: "('ga.ve:)" 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('ga).ve:" 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "(ga.'ve:)" 0.0 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "ga.('ve:)" 0.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [5]: "/ma-(ti-(bhis/" 3
+	candidate [1]: "ma.('ti.bhis)" 1.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ma.ti.('bhis)" 0.0 1.0 0.0 2.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [3]: "('ma.ti).bhis" 2.0 2.0 0.0 0.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [6]: "/arc-(i-(mant-am" 2
+	candidate [1]: "ar.ci.('man.tam)" 1.0 1.0 0.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ar.('ci.man).tam" 2.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [7]: "/pumams-am/" 2
+	candidate [1]: "('pu.ma:m).sam" 3.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "pu.('mam.sam)" 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [8]: "/puma:ms-(as/" 4
+	candidate [1]: "pum.('sas)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [2]: "('pum).sas" 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [3]: "('pum.sas)" 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [4]: "pu.ma:m.('sas)" 0.0 0.0 0.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [9]: "/(gav)-(mant-(as" 4
+	candidate [1]: "('go:.ma).tas" 2.0 2.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('go:).ma.tas" 2.0 2.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [3]: "go:.('ma.tas)" 1.0 2.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "go:.ma.('tas)" 0.0 2.0 1.0 2.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [10]: "/(taks)-(ta)-m/" 2
+	candidate [1]: "taks.('tam)" 0.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('taks.tam)" 1.0 1.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [11]: "/bandh-u)-ta:)/" 3
+	candidate [1]: "ban.('dhu.ta:)" 1.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('ban.dhu).ta:" 2.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0
+	candidate [3]: "ban.dhu.('ta:)" 0.0 0.0 1.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [12]: "/udani-(mant-(bhis/" 5
+	candidate [1]: "('u.da).ni.mad.bhis" 4.0 2.0 0.0 0.0 3.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "u.da.ni.('mad).bhis" 1.0 1.0 0.0 3.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "u.da.ni.('mad.bhis)" 1.0 1.0 0.0 3.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "(-u.da).ni.('mad.bhis)" 1.0 1.0 0.0 3.0 3.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [5]: "('u.da).ni.(-mad.bhis)" 4.0 1.0 0.0 3.0 3.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [13]: "/ar(i-as/" 3
+	candidate [1]: "a.('ri.as)" 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ar.('yas)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "('ar.yas)" 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [14]: "/(sanu-(su/" 4
+	candidate [1]: "('snu.Su)" 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [2]: "snu.('Su)" 0.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [3]: "('sa.nu).su" 2.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "('snu).('su)" 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0
+input [15]: "/uks-(an-(as/" 4
+	candidate [1]: "uk.('Snas)" 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0
+	candidate [2]: "uk.('Sa.nas)" 1.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "('uk.Snas)" 1.0 2.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0
+	candidate [4]: "uk.Sa.('nas)" 0.0 1.0 0.0 2.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [16]: "/sUrya)-de:v-(a)-tA)-(ya)-m/" 4
+	candidate [1]: "('sUr.ya).de:.va.ti.yam" 5.0 2.0 3.0 0.0 4.0 0.0 1.0 1.0 0.0 0.0 0.0
+	candidate [2]: "sUr.ya.de:.('va).ti.yam" 3.0 1.0 2.0 3.0 2.0 0.0 1.0 1.0 0.0 0.0 0.0
+	candidate [3]: "sUr.ya.de:.va.('ti.yam)" 1.0 1.0 3.0 4.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "sUr.ya.de:.('va.ti).yam" 2.0 1.0 3.0 3.0 1.0 0.0 1.0 1.0 0.0 0.0 0.0
+input [17]: "/dev-(a)-(vant-am/" 3
+	candidate [1]: "de:.('va).van.tam" 2.0 1.0 0.0 1.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "de:.va.(van.tam)" 1.0 1.0 1.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [3]: "('de:.va).van.tam" 3.0 2.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [18]: "/man-as)-(vant-am/" 2
+	candidate [1]: "('ma.nas).van.tam" 3.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ma.nas.('van.tam)" 1.0 0.0 1.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [19]: "/kav-(i)-(a)-ta:)/ (cf. ka.('vi).kra.tu)" 5
+	candidate [1]: "kav.('ya.ta:)" 1.0 0.0 2.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "kav.('ya).ta:" 1.0 0.0 2.0 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0
+	candidate [3]: "('kav.ya).ta:" 2.0 2.0 2.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0
+	candidate [4]: "kav.ya.('ta:)" 0.0 2.0 2.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [5]: "ka.('vi.a).ta:" 2.0 1.0 2.0 1.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0
+input [20]: "/jya-i)STha-ta:)ti-m/" 4
+	candidate [1]: "jyeS.('Tha.ta:).tim" 2.0 0.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('jyeS).Tha.ta:.tim" 3.0 0.0 1.0 0.0 3.0 0.0 0.0 1.0 0.0 0.0 0.0
+	candidate [3]: "jyeS.Tha.('ta:.tim)" 1.0 0.0 2.0 2.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0
+	candidate [4]: "jyeS.Tha.('ta:).tim" 1.0 0.0 1.0 2.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [21]: "/(nr-(bhis/" 2
+	candidate [1]: "('nr.bhis)" 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "nr.('bhis)" 0.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [22]: "/(nr-(nAm/" 2
+	candidate [1]: "nr.('nAm)" 0.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "('nr.nAm)" 1.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+input [23]: "/nad-(I)-(nAm/" 3
+	candidate [1]: "na.('dI).nAm" 1.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+	candidate [2]: "na.di.('nAm)" 0.0 1.0 1.0 2.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0
+	candidate [3]: "('na.dI).nAm" 2.0 2.0 0.0 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0
+input [24]: "/(go)-(mat-(I-(nAm/" 3
+	candidate [1]: "('go:).ma.tI.nAm" 3.0 4.0 0.0 0.0 3.0 0.0 1.0 0.0 0.0 0.0 1.0
+	candidate [2]: "go:.('ma.tI).nAm" 2.0 4.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 1.0
+	candidate [3]: "go:.ma.tI.('nAm)" 0.0 3.0 1.0 3.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+input [25]: "/ma-(ti-(nAm/" 2
+	candidate [1]: "ma.tI.('nAm)" 0.0 1.0 0.0 2.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "ma.('tI.nAm)" 1.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+input [26]: "/(rsi)-manas)/" 2
+	candidate [1]: "('r.si).ma.nas" 3.0 0.0 1.0 0.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "r.si.('ma.nas)" 1.0 1.0 1.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [27]: "/sakti-(bhis/" 2
+	candidate [1]: "('sak.ti).bhis" 2.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [2]: "sak.ti.('bhis)" 0.0 0.0 0.0 2.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+input [28]: "/ziti-pAd-()-as/" 4
+	candidate [1]: "zi.ti.('pA).das" 2.0 1.0 0.0 2.0 1.0 0.0 1.0 0.0 0.0 0.0 0.0
+	candidate [2]: "zi.('ti.pA).das" 1.0 2.0 0.0 1.0 1.0 0.0 2.0 0.0 0.0 0.0 0.0
+	candidate [3]: "zi.('ti.pA).(-das)" 1.0 0.0 0.0 4.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	candidate [4]: "zi.ti.pA.('das)" 0.0 0.0 1.0 3.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0
+item [2]:
+	class = "PairDistribution"
+	name = "current language"
+	pairs: size = 28
+	pairs [1]:
+		string1 = "/ma-(ti-m/"
+		string2 = "ma.('tim)"
+		weight = 100
+	pairs [2]:
+		string1 = "/man-as)/"
+		string2 = "('ma.nas)"
+		weight = 100
+	pairs [3]:
+		string1 = "/pad-(i/"
+		string2 = "pa.('di)"
+		weight = 100
+	pairs [4]:
+		string1 = "/(gav)-(e:/"
+		string2 = "('ga).ve:"
+		weight = 100
+	pairs [5]:
+		string1 = "/ma-(ti-(bhis/"
+		string2 = "ma.('ti.bhis)"
+		weight = 100
+	pairs [6]:
+		string1 = "/arc-(i-(mant-am"
+		string2 = "ar.ci.('man.tam)"
+		weight = 100
+	pairs [7]:
+		string1 = "/pumams-am/"
+		string2 = "('pu.ma:m).sam"
+		weight = 100
+	pairs [8]:
+		string1 = "/puma:ms-(as/"
+		string2 = "pum.('sas)"
+		weight = 100
+	pairs [9]:
+		string1 = "/(gav)-(mant-(as"
+		string2 = "('go:).ma.tas"
+		weight = 100
+	pairs [10]:
+		string1 = "/(taks)-(ta)-m/"
+		string2 = "taks.('tam)"
+		weight = 100
+	pairs [11]:
+		string1 = "/bandh-u)-ta:)/"
+		string2 = "ban.('dhu.ta:)"
+		weight = 100
+	pairs [12]:
+		string1 = "/udani-(mant-(bhis/"
+		string2 = "u.da.ni.('mad.bhis)"
+		weight = 100
+	pairs [13]:
+		string1 = "/ar(i-as/"
+		string2 = "ar.('yas)"
+		weight = 100
+	pairs [14]:
+		string1 = "/(sanu-(su/"
+		string2 = "('snu.Su)"
+		weight = 100
+	pairs [15]:
+		string1 = "/uks-(an-(as/"
+		string2 = "uk.('Snas)"
+		weight = 100
+	pairs [16]:
+		string1 = "/sUrya)-de:v-(a)-tA)-(ya)-m/"
+		string2 = "sUr.ya.de:.va.('ti.yam)"
+		weight = 100
+	pairs [17]:
+		string1 = "/dev-(a)-(vant-am/"
+		string2 = "de:.('va).van.tam"
+		weight = 100
+	pairs [18]:
+		string1 = "/man-as)-(vant-am/"
+		string2 = "('ma.nas).van.tam"
+		weight = 100
+	pairs [19]:
+		string1 = "/kav-(i)-(a)-ta:)/ (cf. ka.('vi).kra.tu)"
+		string2 = "kav.('ya.ta:)"
+		weight = 100
+	pairs [20]:
+		string1 = "/jya-i)STha-ta:)ti-m/"
+		string2 = "jyeS.('Tha.ta:).tim"
+		weight = 100
+	pairs [21]:
+		string1 = "/(nr-(bhis/"
+		string2 = "('nr.bhis)"
+		weight = 100
+	pairs [22]:
+		string1 = "/(nr-(nAm/"
+		string2 = "nr.('nAm)"
+		weight = 100
+	pairs [23]:
+		string1 = "/nad-(I)-(nAm/"
+		string2 = "na.('dI).nAm"
+		weight = 100
+	pairs [24]:
+		string1 = "/(go)-(mat-(I-(nAm/"
+		string2 = "('go:).ma.tI.nAm"
+		weight = 100
+	pairs [25]:
+		string1 = "/ma-(ti-(nAm/"
+		string2 = "ma.tI.('nAm)"
+		weight = 100
+	pairs [26]:
+		string1 = "/(rsi)-manas)/"
+		string2 = "('r.si).ma.nas"
+		weight = 100
+	pairs [27]:
+		string1 = "/sakti-(bhis/"
+		string2 = "('sak.ti).bhis"
+		weight = 100
+	pairs [28]:
+		string1 = "/ziti-pAd-()-as/"
+		string2 = "zi.ti.('pA).das"
+		weight = 100

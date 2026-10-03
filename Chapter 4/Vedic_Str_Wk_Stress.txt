@@ -84,3 +84,6 @@
 	r.si.('ma.nas)		1	1	1	1		2			2								1		
 /sakti-(bhis/	('sak.ti).bhis	1	2	1	1						1										
 	sak.ti.('bhis)			1				2			2							1	1		
+/ziti-pAd-()-as/	zi.ti.('pA).das	1	2	1	1			2	1		3										
+	zi.('ti.pA).das		1	2	2			1	1		2										
+	zi.('ti.pA).('das)		1	2				4	1		1							1	1		

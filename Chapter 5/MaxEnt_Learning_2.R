@@ -148,20 +148,23 @@ learner_cand_probs <- initial_learner_candidate_probs(learner_violations, learne
 
 # Online Learning: Sampling plus update with delta rule
   # Important question here: should negative changes in weights be set to 0, or should any resulting negative learner weights be set at 0.
-update_rule <- function(teacher_winner, learner_winner, rate, learner_weights){
+update_rule <- function(teacher_winner, learner_winner, rate, learner_weights, negative_weights = F){
   change_in_weights <- rate*(learner_winner - teacher_winner) # learner-teacher or teacher-learner -- I think the former for positive weights; cf. Jarosz 2016: 204
   #negatives <- which(change_in_weights < 0)
   #change_in_weights[negatives] <- 0
   learner_weights <- learner_weights + change_in_weights
-  negatives <- which(learner_weights < 0) # GLA allows negative weights, I think
-  learner_weights[negatives] <- 0
+  if(negative_weights == F){
+    negatives <- which(learner_weights < 0) # GLA allows negative weights, I think
+    learner_weights[negatives] <- 0
+  }
   return(learner_weights)
 }
 
 # Run a learning loop with a specified number of iterations and a learning rate
-learner_weights <- rep(0,ncol(tableaux[[2]][[1]])) # With my Vedic_Test_2 test data, it is converging on the categorical outcomes that would result from regular OT. What does this tell me?
+learner_weights <- rep(5,ncol(tableaux[[2]][[1]])) # With my Vedic_Test_2 test data, it is converging on the categorical outcomes that would result from regular OT. What does this tell me?
 my_learner_cand_probs <- initial_learner_candidate_probs(learner_violations, learner_weights)
-learning_loop <- function(tableaux = tableaux, number_iterations = 50000, learning_rate = 0.01, multiple_teachers = F, student_teachers = F, num_agents = number_agents, prev_gen = previous_generation, current_gen = current_generation, learner_cand_probs = my_learner_cand_probs){ # For learning categorical distributions, this comes pretty close. You could program some variability in the learning rate (sometimes faster, sometimes slower)
+
+learning_loop <- function(tableaux = tableaux, number_iterations = 50000, learning_rate = 0.01, multiple_teachers = F, student_teachers = F, num_agents = number_agents, prev_gen = previous_generation, current_gen = current_generation, learner_cand_probs = my_learner_cand_probs, negative_weights = F){ # For learning categorical distributions, this comes pretty close. You could program some variability in the learning rate (sometimes faster, sometimes slower)
   constraint_weights_frame <- data.frame(matrix(0, number_iterations, length(learner_weights)))
   colnames(constraint_weights_frame) <- tableaux[[5]]
   for(i in 1:number_iterations){
@@ -189,7 +192,7 @@ learning_loop <- function(tableaux = tableaux, number_iterations = 50000, learni
     # Get violation profiles of the sampled items 
     temp_teacher_violations <- tableaux[[2]][[current_learner_tableaux]][current_teacher_candidate_number, ]
     temp_learner_violations <- tableaux[[2]][[current_learner_tableaux]][current_learner_candidate_number, ]
-    learner_weights <- update_rule(temp_teacher_violations, temp_learner_violations, rate = learning_rate, learner_weights)
+    learner_weights <- update_rule(temp_teacher_violations, temp_learner_violations, rate = learning_rate, learner_weights, negative_weights = negative_weights)
     constraint_weights_frame[i, ] <- learner_weights
     #learner_weights <- update_rule(temp_teacher_violations, temp_learner_violations, rate=0.001, learner_weights)
     #print(learner_weights)
@@ -199,7 +202,7 @@ learning_loop <- function(tableaux = tableaux, number_iterations = 50000, learni
   final_learner_outcome <- list(learner_cand_probs, learner_weights, constraint_weights_frame)
   return(final_learner_outcome)
 }
-output <- learning_loop(tableaux = gothic_data, learning_rate = 0.01, number_iterations = 10000)
+output <- learning_loop(tableaux = tableaux, learning_rate = 0.01, number_iterations = 10000)
 
 SSE <- function(tableaux, output){
   return(sum(((tableaux[[1]][[1]]/sum(tableaux[[1]][[1]])) - output[[1]][[1]])^2))
